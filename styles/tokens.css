@@ -1,0 +1,304 @@
+/* ============================================================
+   LEDGER ADVANCE — Design Tokens
+   This file is the SINGLE SOURCE OF TRUTH for the design system.
+   Every component reads from these tokens — never a hardcoded hex.
+   Build order: THIS FILE FIRST.
+   ============================================================ */
+
+/* ---- Light palette (default) ---- */
+:root {
+  /* Page */
+  --bg-page: #F3F2ED;
+  --bg-card: #FFFFFF;
+  --bg-sidebar: #14171F;
+  --bg-sidebar-hover: #1E2230;
+  --bg-sidebar-active: #262B3A;
+  --bg-topbar: rgba(243, 242, 237, 0.85);
+  --bg-input: #EBEAE5;
+  --bg-input-focus: #FFFFFF;
+  --bg-overlay: rgba(20, 23, 26, 0.4);
+
+  /* Ink */
+  --ink-primary: #14171A;
+  --ink-secondary: #5B5E68;
+  --ink-muted: #9A9CA6;
+  --ink-inverse: #FFFFFF;
+  --ink-sidebar: #C4C6CE;
+  --ink-sidebar-muted: #6E7180;
+
+  /* Accent */
+  --accent: #3452C5;
+  --accent-hover: #2B44A8;
+  --accent-light: rgba(52, 82, 197, 0.10);
+  --accent-medium: rgba(52, 82, 197, 0.18);
+
+  /* Delta (gain/loss) */
+  --delta-gain: #1A8754;
+  --delta-gain-bg: rgba(26, 135, 84, 0.10);
+  --delta-loss: #C7362B;
+  --delta-loss-bg: rgba(199, 54, 43, 0.10);
+
+  /* RSI signal palette */
+  --rsi-oversold: #C7362B;
+  --rsi-oversold-bg: rgba(199, 54, 43, 0.10);
+  --rsi-neutral: #B8860B;
+  --rsi-neutral-bg: rgba(184, 134, 11, 0.10);
+  --rsi-overbought: #1A8754;
+  --rsi-overbought-bg: rgba(26, 135, 84, 0.10);
+
+  /* Borders & shadows */
+  --border-hairline: rgba(20, 23, 26, 0.08);
+  --border-input: rgba(20, 23, 26, 0.15);
+  --border-input-focus: var(--accent);
+  --shadow-card: 0 1px 3px rgba(20, 23, 26, 0.06), 0 0 0 1px var(--border-hairline);
+  --shadow-card-hover: 0 4px 12px rgba(20, 23, 26, 0.10), 0 0 0 1px var(--border-hairline);
+  --shadow-dropdown: 0 8px 24px rgba(20, 23, 26, 0.14);
+
+  /* Chart */
+  --chart-grid: rgba(20, 23, 26, 0.06);
+  --chart-axis: rgba(20, 23, 26, 0.20);
+  --chart-tooltip-bg: #14171A;
+  --chart-tooltip-ink: #FFFFFF;
+  --chart-area-fill-start: rgba(52, 82, 197, 0.25);
+  --chart-area-fill-end: rgba(52, 82, 197, 0.02);
+  --chart-volume: rgba(52, 82, 197, 0.18);
+
+  /* Typography */
+  --font-display: 'Manrope', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Public Sans', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Cascadia Mono', 'Consolas', monospace;
+
+  --text-xs: 0.6875rem;    /* 11px */
+  --text-sm: 0.75rem;      /* 12px */
+  --text-base: 0.875rem;   /* 14px */
+  --text-md: 1rem;         /* 16px */
+  --text-lg: 1.125rem;     /* 18px */
+  --text-xl: 1.5rem;       /* 24px */
+  --text-2xl: 2rem;        /* 32px */
+  --text-3xl: 2.5rem;      /* 40px */
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-extrabold: 800;
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* Radii */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Layout */
+  --sidebar-width: 240px;
+  --topbar-height: 64px;
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 120ms;
+  --duration-normal: 200ms;
+  --duration-slow: 350ms;
+
+  /* ---- Ticker Identity Colors (golden-angle HSL distribution) ---- */
+  --ticker-INFY:  hsl(0, 70%, 50%);
+  --ticker-WIT:   hsl(14, 70%, 50%);
+  --ticker-IBN:   hsl(29, 70%, 50%);
+  --ticker-HDB:   hsl(43, 70%, 50%);
+  --ticker-AAPL:  hsl(58, 70%, 45%);
+  --ticker-MSFT:  hsl(72, 70%, 40%);
+  --ticker-GOOGL: hsl(86, 70%, 45%);
+  --ticker-TSLA:  hsl(101, 70%, 45%);
+  --ticker-NVDA:  hsl(115, 70%, 40%);
+  --ticker-AMZN:  hsl(130, 70%, 40%);
+  --ticker-META:  hsl(144, 70%, 45%);
+  --ticker-NFLX:  hsl(158, 70%, 45%);
+  --ticker-DIS:   hsl(173, 70%, 45%);
+  --ticker-KO:    hsl(187, 70%, 45%);
+  --ticker-JPM:   hsl(202, 70%, 50%);
+  --ticker-WMT:   hsl(216, 70%, 50%);
+  --ticker-V:     hsl(230, 70%, 55%);
+  --ticker-JNJ:   hsl(245, 70%, 55%);
+  --ticker-PG:    hsl(259, 65%, 55%);
+  --ticker-XOM:   hsl(274, 65%, 50%);
+  --ticker-BAC:   hsl(288, 65%, 50%);
+  --ticker-NKE:   hsl(302, 65%, 50%);
+  --ticker-UNH:   hsl(317, 65%, 50%);
+  --ticker-COST:  hsl(331, 65%, 50%);
+  --ticker-CRM:   hsl(346, 70%, 50%);
+}
+
+/* ---- Dark palette: system preference ---- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-page: #0D0F17;
+    --bg-card: #141722;
+    --bg-sidebar: #090B10;
+    --bg-sidebar-hover: #151824;
+    --bg-sidebar-active: #5B7AE5;
+    --bg-topbar: rgba(13, 15, 23, 0.88);
+    --bg-input: #1A1D2B;
+    --bg-input-focus: #212536;
+    --bg-overlay: rgba(0, 0, 0, 0.65);
+
+    --ink-primary: #E8E9EC;
+    --ink-secondary: #9A9CA6;
+    --ink-muted: #5B5E68;
+    --ink-inverse: #14171A;
+    --ink-sidebar: #C4C6CE;
+    --ink-sidebar-muted: #6E7180;
+
+    --accent: #5B7AE5;
+    --accent-hover: #7B94F0;
+    --accent-light: rgba(91, 122, 229, 0.12);
+    --accent-medium: rgba(91, 122, 229, 0.22);
+
+    --delta-gain: #34D079;
+    --delta-gain-bg: rgba(52, 208, 121, 0.12);
+    --delta-loss: #F05545;
+    --delta-loss-bg: rgba(240, 85, 69, 0.12);
+
+    --rsi-oversold: #F05545;
+    --rsi-oversold-bg: rgba(240, 85, 69, 0.12);
+    --rsi-neutral: #E0B840;
+    --rsi-neutral-bg: rgba(224, 184, 64, 0.12);
+    --rsi-overbought: #34D079;
+    --rsi-overbought-bg: rgba(52, 208, 121, 0.12);
+
+    --border-hairline: rgba(255, 255, 255, 0.06);
+    --border-input: rgba(255, 255, 255, 0.12);
+    --border-input-focus: var(--accent);
+    --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.20), 0 0 0 1px var(--border-hairline);
+    --shadow-card-hover: 0 4px 12px rgba(0, 0, 0, 0.30), 0 0 0 1px var(--border-hairline);
+    --shadow-dropdown: 0 8px 24px rgba(0, 0, 0, 0.40);
+
+    --chart-grid: rgba(255, 255, 255, 0.05);
+    --chart-axis: rgba(255, 255, 255, 0.15);
+    --chart-tooltip-bg: #2A2E3A;
+    --chart-tooltip-ink: #E8E9EC;
+    --chart-area-fill-start: rgba(91, 122, 229, 0.30);
+    --chart-area-fill-end: rgba(91, 122, 229, 0.02);
+    --chart-volume: rgba(91, 122, 229, 0.22);
+
+    /* Ticker colors: brightened for dark backgrounds */
+    --ticker-INFY:  hsl(0, 80%, 65%);
+    --ticker-WIT:   hsl(14, 80%, 65%);
+    --ticker-IBN:   hsl(29, 80%, 65%);
+    --ticker-HDB:   hsl(43, 80%, 65%);
+    --ticker-AAPL:  hsl(58, 80%, 60%);
+    --ticker-MSFT:  hsl(72, 80%, 55%);
+    --ticker-GOOGL: hsl(86, 80%, 60%);
+    --ticker-TSLA:  hsl(101, 80%, 60%);
+    --ticker-NVDA:  hsl(115, 80%, 55%);
+    --ticker-AMZN:  hsl(130, 80%, 55%);
+    --ticker-META:  hsl(144, 80%, 60%);
+    --ticker-NFLX:  hsl(158, 80%, 60%);
+    --ticker-DIS:   hsl(173, 80%, 60%);
+    --ticker-KO:    hsl(187, 80%, 60%);
+    --ticker-JPM:   hsl(202, 80%, 65%);
+    --ticker-WMT:   hsl(216, 80%, 65%);
+    --ticker-V:     hsl(230, 80%, 70%);
+    --ticker-JNJ:   hsl(245, 80%, 70%);
+    --ticker-PG:    hsl(259, 75%, 70%);
+    --ticker-XOM:   hsl(274, 75%, 65%);
+    --ticker-BAC:   hsl(288, 75%, 65%);
+    --ticker-NKE:   hsl(302, 75%, 65%);
+    --ticker-UNH:   hsl(317, 75%, 65%);
+    --ticker-COST:  hsl(331, 75%, 65%);
+    --ticker-CRM:   hsl(346, 80%, 65%);
+  }
+}
+
+/* ---- Dark palette: manual toggle ---- */
+:root[data-theme="dark"] {
+  --bg-page: #0D0F17;
+  --bg-card: #141722;
+  --bg-sidebar: #090B10;
+  --bg-sidebar-hover: #151824;
+  --bg-sidebar-active: #5B7AE5;
+  --bg-topbar: rgba(13, 15, 23, 0.88);
+  --bg-input: #1A1D2B;
+  --bg-input-focus: #212536;
+  --bg-overlay: rgba(0, 0, 0, 0.65);
+
+  --ink-primary: #E8E9EC;
+  --ink-secondary: #9A9CA6;
+  --ink-muted: #5B5E68;
+  --ink-inverse: #14171A;
+  --ink-sidebar: #C4C6CE;
+  --ink-sidebar-muted: #6E7180;
+
+  --accent: #5B7AE5;
+  --accent-hover: #7B94F0;
+  --accent-light: rgba(91, 122, 229, 0.12);
+  --accent-medium: rgba(91, 122, 229, 0.22);
+
+  --delta-gain: #34D079;
+  --delta-gain-bg: rgba(52, 208, 121, 0.12);
+  --delta-loss: #F05545;
+  --delta-loss-bg: rgba(240, 85, 69, 0.12);
+
+  --rsi-oversold: #F05545;
+  --rsi-oversold-bg: rgba(240, 85, 69, 0.12);
+  --rsi-neutral: #E0B840;
+  --rsi-neutral-bg: rgba(224, 184, 64, 0.12);
+  --rsi-overbought: #34D079;
+  --rsi-overbought-bg: rgba(52, 208, 121, 0.12);
+
+  --border-hairline: rgba(255, 255, 255, 0.06);
+  --border-input: rgba(255, 255, 255, 0.12);
+  --border-input-focus: var(--accent);
+  --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.20), 0 0 0 1px var(--border-hairline);
+  --shadow-card-hover: 0 4px 12px rgba(0, 0, 0, 0.30), 0 0 0 1px var(--border-hairline);
+  --shadow-dropdown: 0 8px 24px rgba(0, 0, 0, 0.40);
+
+  --chart-grid: rgba(255, 255, 255, 0.05);
+  --chart-axis: rgba(255, 255, 255, 0.15);
+  --chart-tooltip-bg: #2A2E3A;
+  --chart-tooltip-ink: #E8E9EC;
+  --chart-area-fill-start: rgba(91, 122, 229, 0.30);
+  --chart-area-fill-end: rgba(91, 122, 229, 0.02);
+  --chart-volume: rgba(91, 122, 229, 0.22);
+
+  --ticker-INFY:  hsl(0, 80%, 65%);
+  --ticker-WIT:   hsl(14, 80%, 65%);
+  --ticker-IBN:   hsl(29, 80%, 65%);
+  --ticker-HDB:   hsl(43, 80%, 65%);
+  --ticker-AAPL:  hsl(58, 80%, 60%);
+  --ticker-MSFT:  hsl(72, 80%, 55%);
+  --ticker-GOOGL: hsl(86, 80%, 60%);
+  --ticker-TSLA:  hsl(101, 80%, 60%);
+  --ticker-NVDA:  hsl(115, 80%, 55%);
+  --ticker-AMZN:  hsl(130, 80%, 55%);
+  --ticker-META:  hsl(144, 80%, 60%);
+  --ticker-NFLX:  hsl(158, 80%, 60%);
+  --ticker-DIS:   hsl(173, 80%, 60%);
+  --ticker-KO:    hsl(187, 80%, 60%);
+  --ticker-JPM:   hsl(202, 80%, 65%);
+  --ticker-WMT:   hsl(216, 80%, 65%);
+  --ticker-V:     hsl(230, 80%, 70%);
+  --ticker-JNJ:   hsl(245, 80%, 70%);
+  --ticker-PG:    hsl(259, 75%, 70%);
+  --ticker-XOM:   hsl(274, 75%, 65%);
+  --ticker-BAC:   hsl(288, 75%, 65%);
+  --ticker-NKE:   hsl(302, 75%, 65%);
+  --ticker-UNH:   hsl(317, 75%, 65%);
+  --ticker-COST:  hsl(331, 75%, 65%);
+  --ticker-CRM:   hsl(346, 80%, 65%);
+}

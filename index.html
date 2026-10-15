@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ledgerline — Personal Finance & Market Intelligence</title>
+  <meta name="description" content="Personal finance dashboard combining live-sourced Indian market news, company deep-dive with technical charts, multi-ticker comparison, and interactive budget planner." />
+  
+  <!-- Google Fonts: Manrope (Headings), Public Sans (Body), IBM Plex Mono (Data) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Manrope:wght@600;700;800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Core Design System & Styling -->
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/layout.css" />
+  <link rel="stylesheet" href="styles/components.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" aria-label="Main Navigation">
+      <a href="#" class="sidebar-logo" aria-label="LedgerAdvance Home">
+        <div class="sidebar-logo-icon" style="background: #5B7AE5; border-radius: 8px; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <span style="color: #FFFFFF; font-family: var(--font-display); font-weight: 800; font-size: 18px; line-height: 1;">L</span>
+        </div>
+        <span class="sidebar-logo-text" style="font-size: 18px; font-weight: 700; color: #FFFFFF; letter-spacing: -0.01em;">LedgerAdvance</span>
+      </a>
+
+      <div class="sidebar-label">MENU</div>
+      <nav class="sidebar-nav">
+        <button class="nav-btn active" data-section="dashboard">
+          <span class="nav-btn-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="3" y="3" width="7" height="7" rx="1.5" />
+              <rect x="14" y="3" width="7" height="7" rx="1.5" />
+              <rect x="14" y="14" width="7" height="7" rx="1.5" />
+              <rect x="3" y="14" width="7" height="7" rx="1.5" />
+            </svg>
+          </span>
+          <span>Dashboard</span>
+        </button>
+
+        <button class="nav-btn" data-section="news">
+          <span class="nav-btn-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
+              <path d="M18 14h-8" />
+              <path d="M15 18h-5" />
+              <path d="M10 6h8v4h-8V6Z" />
+            </svg>
+          </span>
+          <span>Market News</span>
+        </button>
+
+        <button class="nav-btn" data-section="company">
+          <span class="nav-btn-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 21h18" />
+              <path d="M5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16" />
+              <path d="M9 9h1" />
+              <path d="M9 13h1" />
+              <path d="M9 17h1" />
+              <path d="M14 9h1" />
+              <path d="M14 13h1" />
+              <path d="M14 17h1" />
+            </svg>
+          </span>
+          <span>Company</span>
+        </button>
+
+        <button class="nav-btn" data-section="compare">
+          <span class="nav-btn-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M18 20V10" />
+              <path d="M12 20V4" />
+              <path d="M6 20v-6" />
+            </svg>
+          </span>
+          <span>Compare</span>
+        </button>
+
+        <button class="nav-btn" data-section="budget">
+          <span class="nav-btn-icon">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v12" />
+              <path d="M16 10h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8" />
+            </svg>
+          </span>
+          <span>Budget</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-spacer"></div>
+
+      <div class="sidebar-bottom">
+        <button id="help-btn" class="sidebar-bottom-btn" aria-label="Help Center">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+            <line x1="12" y1="17" x2="12.01" y2="17" />
+          </svg>
+          <span>Help Center</span>
+        </button>
+        <button id="theme-toggle" class="sidebar-bottom-btn" aria-label="Toggle light or dark theme">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5" />
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+          </svg>
+          <span>Theme</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Mobile Overlay -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <!-- Sticky Topbar (Reference Image Layout) -->
+    <header class="topbar">
+      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open navigation menu">
+        <svg viewBox="0 0 24 24">
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
+      </button>
+
+      <div class="topbar-greeting">
+        <h1 id="greeting-text" class="topbar-greeting-text">Good afternoon, Sandeep</h1>
+        <div id="topbar-date" class="topbar-greeting-date">Wednesday, 14 October 2026</div>
+      </div>
+
+      <div class="topbar-spacer"></div>
+
+      <div class="topbar-right">
+        <!-- Search bar with action button -->
+        <div class="topbar-search-form">
+          <input
+            type="text"
+            id="global-search"
+            class="topbar-search-input"
+            list="search-suggestions"
+            placeholder="Search ticker or company..."
+            autocomplete="off"
+          />
+          <datalist id="search-suggestions"></datalist>
+          <button id="global-search-btn" class="topbar-search-btn" type="button">Search</button>
+        </div>
+
+        <!-- Dedicated Moon Theme Button -->
+        <button id="theme-toggle-header" class="btn-icon-theme" aria-label="Toggle theme" title="Toggle theme">
+          <svg id="theme-icon-header" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+          </svg>
+        </button>
+
+        <!-- Live Ticker Pill Badge with Real-Time Indian Local Clock -->
+        <div class="live-ticker-badge" id="live-header-ticker" title="Indian Standard Time (IST — Asia/Kolkata)">
+          <span class="pulse-dot"></span>
+          <span id="live-ticker-text">INFY NSE Live · ₹1,061.91 · ...</span>
+        </div>
+
+        <!-- User Avatar -->
+        <div class="topbar-avatar" title="Sandeep">S</div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content">
+
+      <!-- ================= SECTION 1: DASHBOARD ================= -->
+      <section id="sec-dashboard" class="section active">
+        <!-- Row 1: 4 Equal Top Stat Cards -->
+        <div class="dash-stats-row">
+          <!-- Card 1: INFY · HERO PRICE -->
+          <div class="stat-card" id="card-hero-price">
+            <div class="stat-card-label">INFY · HERO PRICE</div>
+            <div>
+              <div class="stat-card-row">
+                <span id="hero-price" class="stat-card-value">$11.08</span>
+                <span id="hero-inr-price" class="stat-card-sub">(₹1,061.86)</span>
+              </div>
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 6px;">
+                <span id="hero-timestamp" style="font-size: 11px; color: var(--ink-muted); display: inline-flex; align-items: center; gap: 4px;">
+                  <span style="width: 5px; height: 5px; border-radius: 50%; background: #34D079;"></span>
+                  <span id="hero-time-text">03:02 pm · 14 Oct 2026</span>
+                </span>
+                <span id="hero-change" class="stat-card-delta gain">+5.26%</span>
+              </div>
+            </div>
+            <div class="stat-card-sparkline">
+              <svg id="hero-sparkline-svg" viewBox="0 0 200 36" style="width: 100%; height: 100%; overflow: visible;"></svg>
+            </div>
+          </div>
+
+          <!-- Card 2: TOP GAINER TODAY -->
+          <div class="stat-card" id="stat-gainer">
+            <div class="stat-card-label">TOP GAINER TODAY</div>
+            <div>
+              <div class="stat-card-row">
+                <span id="stat-gainer-sym" class="stat-card-value">INFY</span>
+                <span id="stat-gainer-val" class="stat-card-delta gain">▲ +5.52%</span>
+              </div>
+              <div id="stat-gainer-sub" class="stat-card-sub" style="margin-top: 4px;">$11.08 (₹1,061.86)</div>
+              <div id="stat-gainer-name" style="font-size: 12px; color: var(--ink-muted); margin-top: 2px;">Infosys Ltd. ADR</div>
+            </div>
+            <div style="height: 10px;"></div>
+          </div>
+
+          <!-- Card 3: TOP DECLINER TODAY -->
+          <div class="stat-card" id="stat-decliner">
+            <div class="stat-card-label">TOP DECLINER TODAY</div>
+            <div>
+              <div class="stat-card-row">
+                <span id="stat-decliner-sym" class="stat-card-value">META</span>
+                <span id="stat-decliner-val" class="stat-card-delta loss">▼ -3.33%</span>
+              </div>
+              <div id="stat-decliner-sub" class="stat-card-sub" style="margin-top: 4px;">$751.66 (₹72,835.84)</div>
+              <div id="stat-decliner-name" style="font-size: 12px; color: var(--ink-muted); margin-top: 2px;">Meta Platforms Inc.</div>
+            </div>
+            <div style="height: 10px;"></div>
+          </div>
+
+          <!-- Card 4: BUDGET SURPLUS / MO -->
+          <div class="stat-card" id="stat-budget">
+            <div class="stat-card-label">BUDGET SURPLUS / MO</div>
+            <div>
+              <div id="stat-budget-val" class="stat-card-value" style="color: var(--ink-primary);">₹32,000</div>
+              <div style="font-size: 12px; color: var(--ink-muted); margin-top: 6px;">Live from Budget tab</div>
+            </div>
+            <div style="height: 10px;"></div>
+          </div>
+        </div>
+
+        <!-- Row 2: 90-Day Price Chart & RSI Signal -->
+        <div class="dash-charts-row">
+          <!-- Left: INFY · 90-Day Price Chart with SMA -->
+          <div class="card" style="padding: 20px 24px;">
+            <div class="card-header" style="margin-bottom: 8px;">
+              <div>
+                <h3 class="card-title" style="font-size: 16px;">INFY · 90-Day Price</h3>
+                <div class="card-subtitle" style="font-size: 12px;">Daily close (Twelve Data) with 20-day Simple Moving Average overlay</div>
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--ink-muted); background: rgba(255, 255, 255, 0.04); padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border-hairline);">
+                NYSE, USD
+              </div>
+            </div>
+            <div style="width: 100%; height: 260px;">
+              <svg id="dash-price-svg" class="chart-svg" viewBox="0 0 660 260" style="width: 100%; height: 260px;"></svg>
+            </div>
+          </div>
+
+          <!-- Right: RSI Signal -->
+          <div class="card" style="padding: 20px; display: flex; flex-direction: column; justify-content: space-between;">
+            <div>
+              <div class="card-header" style="margin-bottom: 12px;">
+                <h3 class="card-title" style="font-size: 16px;">RSI Signal</h3>
+              </div>
+              <div class="pill-rsi-signal">
+                <span class="pill-rsi-signal-dot"></span>
+                <span id="dash-rsi-text">RSI 57.4 — Neutral</span>
+              </div>
+              <div style="font-size: 12px; color: var(--ink-muted); margin-top: 8px; line-height: 1.4;">
+                14-day RSI on INFY daily closes.
+              </div>
+            </div>
+
+            <!-- Semicircular RSI Gauge -->
+            <div style="display: flex; justify-content: center; margin: 12px 0;">
+              <svg id="dash-rsi-svg" viewBox="0 0 200 110" style="width: 190px; height: 105px;"></svg>
+            </div>
+
+            <!-- Compact Watchlist Preview -->
+            <div style="border-top: 1px solid var(--border-hairline); padding-top: 12px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px;">
+                <span style="font-size: 11px; font-weight: 700; text-transform: uppercase; color: var(--ink-muted); letter-spacing: 0.05em;">Watchlist</span>
+                <button class="nav-btn" data-section="compare" style="width: auto; padding: 2px 8px; font-size: 11px; border: 1px solid var(--border-hairline); border-radius: 4px;">Compare &rarr;</button>
+              </div>
+              <div id="dash-watchlist" class="watchlist-list"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3: Market News Section Below Graphs -->
+        <div class="card" style="padding: 22px 24px;">
+          <div class="card-header" style="margin-bottom: 14px;">
+            <div>
+              <h3 class="card-title" style="font-size: 17px;">Live Indian Market News</h3>
+              <div class="card-subtitle">Real-time intelligence from Dalal Street via Tavily (Sensex, Nifty & Institutional Flows)</div>
+            </div>
+            <button class="nav-btn" data-section="news" style="width: auto; padding: 4px 12px; font-size: 12px; border: 1px solid var(--border-hairline); border-radius: var(--radius-md);">
+              View All Articles &rarr;
+            </button>
+          </div>
+          <div id="dash-news-preview" class="news-card-grid">
+            <!-- Dynamically populated with structured cards -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 2: MARKET NEWS ================= -->
+      <section id="sec-news" class="section">
+        <div class="card" style="margin-bottom: var(--space-4);">
+          <div class="card-header" style="margin-bottom: 0;">
+            <div>
+              <h2 class="card-title" style="font-size: var(--text-xl);">Indian Equity & Macro Market News</h2>
+              <div class="card-subtitle">Live-sourced updates on Sensex, Nifty 50, FII/DII liquidity flows, and corporate developments</div>
+            </div>
+            <div class="badge" style="background: var(--bg-page); border: 1px solid var(--border-hairline); padding: 4px 10px; border-radius: var(--radius-full); font-size: var(--text-xs); color: var(--ink-secondary);">
+              Source: Tavily News API
+            </div>
+          </div>
+        </div>
+
+        <div id="news-list" class="news-list">
+          <!-- Dynamically populated -->
+        </div>
+      </section>
+
+      <!-- ================= SECTION 3: COMPANY DEEP-DIVE ================= -->
+      <section id="sec-company" class="section">
+        <div id="company-content">
+          <!-- Header -->
+          <div class="company-header card" style="margin-bottom: var(--space-4);">
+            <div style="flex: 1;">
+              <div style="display: flex; align-items: center; gap: var(--space-3); margin-bottom: 4px; flex-wrap: wrap;">
+                <h2 id="company-name" class="hero-ticker">INFY — Infosys Ltd</h2>
+                <div id="company-rsi-badge" class="badge-rsi neutral">
+                  <span class="badge-rsi-dot"></span>
+                  <span>Neutral</span>
+                </div>
+                <select id="company-ticker-select" class="company-select-dropdown" aria-label="Select Company to view details" style="margin-left: auto; padding: 6px 12px; background: var(--bg-card); color: var(--ink-primary); border: 1px solid var(--border-hairline); border-radius: var(--radius-md); font-family: var(--font-body); font-size: var(--text-xs); cursor: pointer;">
+                  <!-- Populated dynamically -->
+                </select>
+              </div>
+              <div class="card-subtitle">NYSE: INFY • IT Consulting & Digital Transformation Services • Bengaluru, India</div>
+            </div>
+            <div style="text-align: right; display: flex; flex-direction: column; align-items: flex-end; justify-content: center;">
+              <div id="company-price" class="hero-price">$0.00</div>
+              <div style="display: flex; align-items: center; gap: 8px; margin-top: 2px;">
+                <div id="company-change" class="change-chip gain">+0.00%</div>
+              </div>
+              <div id="company-market-status" style="margin-top: 5px; font-size: 11px; color: var(--ink-muted); display: inline-flex; align-items: center; gap: 5px;">
+                <span id="company-status-dot" style="width: 6px; height: 6px; border-radius: 50%; background: #94A3B8; display: inline-block;"></span>
+                <span id="company-market-status-text">Market Closed · Previous Close</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Body Grid -->
+          <div class="company-body">
+            <!-- Left Column: Price & Volume Charts -->
+            <div class="company-col-left">
+              <div class="card">
+                <div class="card-header">
+                  <div>
+                    <h3 class="card-title">90-Day Price & 20-Day SMA Overlay</h3>
+                    <div class="card-subtitle">Daily close (Twelve Data) with 20-period Simple Moving Average</div>
+                  </div>
+                </div>
+                <div style="width: 100%; min-height: 240px;">
+                  <svg id="company-price-svg" class="chart-svg" viewBox="0 0 600 240" style="width: 100%; height: 240px;"></svg>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <div>
+                    <h3 class="card-title">Daily Trading Volume</h3>
+                    <div class="card-subtitle">Volume histogram across 90 trading sessions</div>
+                  </div>
+                </div>
+                <div style="width: 100%; min-height: 80px;">
+                  <svg id="company-volume-svg" class="chart-svg" viewBox="0 0 600 80" style="width: 100%; height: 80px;"></svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: RSI Gauge & Fundamentals -->
+            <div class="company-col-right">
+              <div class="card">
+                <div class="card-header">
+                  <div>
+                    <h3 class="card-title">14-Day RSI Gauge</h3>
+                    <div class="card-subtitle">Relative Strength Index indicator</div>
+                  </div>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: center;">
+                  <svg id="company-rsi-svg" class="chart-svg" viewBox="0 0 200 120" style="width: 200px; height: 120px;"></svg>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <div>
+                    <h3 class="card-title">Fundamental Ratios</h3>
+                    <div class="card-subtitle">Valuation, profitability & growth metrics</div>
+                  </div>
+                </div>
+                <div id="company-metrics" class="metric-grid">
+                  <!-- Dynamically populated -->
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <div>
+                    <h3 class="card-title">Company Press Releases</h3>
+                    <div class="card-subtitle">Recent corporate announcements via Twelve Data</div>
+                  </div>
+                </div>
+                <div id="company-news-list">
+                  <!-- Dynamically populated -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 4: MULTI-TICKER COMPARE ================= -->
+      <section id="sec-compare" class="section">
+        <div class="card" style="margin-bottom: var(--space-4);">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title" style="font-size: var(--text-xl);">Multi-Ticker Universe Comparison</h2>
+              <div class="card-subtitle">Select up to 5 tickers from our 25-asset universe (FIFO eviction on 6th selection). Fixed identity color encoding.</div>
+            </div>
+          </div>
+          <!-- Pill Picker Area -->
+          <div id="compare-picker" class="pill-grid compare-picker-area">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+        <!-- Selected Tickers Tape Row -->
+        <div id="compare-tape" class="compare-tape">
+          <!-- Dynamically populated tape cards -->
+        </div>
+
+        <!-- Charts Row: Indexed Performance & Radar -->
+        <div class="compare-charts-row">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Indexed Performance (Base = 100)</h3>
+                <div class="card-subtitle">Normalized percentage progression over last 30 trading days</div>
+              </div>
+            </div>
+            <div style="width: 100%; min-height: 280px;">
+              <svg id="compare-indexed-svg" class="chart-svg" viewBox="0 0 600 280" style="width: 100%; height: 280px;"></svg>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Multi-Metric Radar Comparison</h3>
+                <div class="card-subtitle">P/E, ROE, Margin, Rev Growth, Div Yield (Min-Max Normalized)</div>
+              </div>
+            </div>
+            <div style="width: 100%; min-height: 280px; display: flex; justify-content: center;">
+              <svg id="compare-radar-svg" class="chart-svg" viewBox="0 0 320 280" style="width: 320px; height: 280px;"></svg>
+            </div>
+          </div>
+        </div>
+
+        <!-- Market Cap Donut & Metrics Table Row -->
+        <div class="compare-charts-row">
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Relative Market Capitalization</h3>
+                <div class="card-subtitle">Distribution breakdown among selected companies</div>
+              </div>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: var(--space-4);">
+              <svg id="compare-donut-svg" class="chart-svg" viewBox="0 0 240 240" style="width: 240px; height: 240px;"></svg>
+              <div id="compare-donut-legend" class="chart-legend" style="display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-4);"></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div>
+                <h3 class="card-title">Financial Metrics Matrix</h3>
+                <div class="card-subtitle">Direct comparison of key valuation and return metrics</div>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table id="compare-table" class="table-compare">
+                <thead>
+                  <tr>
+                    <th>Ticker</th>
+                    <th>Price</th>
+                    <th>Change</th>
+                    <th>Market Cap</th>
+                    <th>P/E</th>
+                    <th>ROE</th>
+                    <th>Div Yield</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Dynamically populated -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 5: BUDGET PLANNER ================= -->
+      <section id="sec-budget" class="section">
+        <div class="card" style="margin-bottom: var(--space-4);">
+          <div class="card-header">
+            <div>
+              <h2 class="card-title" style="font-size: var(--text-xl);">Client-Side Wealth & Budget Planner</h2>
+              <div class="card-subtitle">Compute monthly surplus, allocate interactive investment buckets, and model multi-year compounding growth.</div>
+            </div>
+          </div>
+
+          <!-- Income / Expense Controls -->
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); margin-top: var(--space-2);">
+            <div class="budget-form-group">
+              <label class="budget-label" for="budget-income">Monthly Income (₹)</label>
+              <input type="number" id="budget-income" class="budget-input" min="0" step="1000" value="80000" />
+            </div>
+            <div class="budget-form-group">
+              <label class="budget-label" for="budget-expenses">Monthly Expenses (₹)</label>
+              <input type="number" id="budget-expenses" class="budget-input" min="0" step="1000" value="50000" />
+            </div>
+            <div class="budget-form-group">
+              <label class="budget-label">Monthly Investable Surplus</label>
+              <div id="budget-surplus" class="stat-card-value gain" style="font-size: var(--text-2xl); padding-top: var(--space-2);">₹30,000</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="budget-grid">
+          <!-- Left Column: Bucket Manager -->
+          <div class="budget-col">
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-title">Allocation Buckets</h3>
+                  <div class="card-subtitle">Customize bucket shares (must sum to exactly 100%)</div>
+                </div>
+              </div>
+              <div id="bucket-list" class="bucket-list">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-title">Monthly Surplus Allocation</h3>
+                  <div class="card-subtitle">Visual distribution of monthly investable capital</div>
+                </div>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: var(--space-3);">
+                <svg id="budget-donut-svg" class="chart-svg" viewBox="0 0 240 240" style="width: 240px; height: 240px;"></svg>
+                <div id="budget-donut-legend" class="chart-legend" style="display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-3);"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Compounding Projections -->
+          <div class="budget-col">
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-title">Compounding Horizon & Growth Assumptions</h3>
+                  <div class="card-subtitle">Adjust investment duration, expected annualized return, and inflation rate</div>
+                </div>
+              </div>
+
+              <!-- Sliders -->
+              <div class="budget-slider-group">
+                <div class="budget-slider-row">
+                  <span class="budget-label">Investment Horizon</span>
+                  <span id="proj-years-value" class="budget-slider-value">15 yr</span>
+                </div>
+                <input type="range" id="proj-years" class="budget-slider" min="1" max="30" step="1" value="15" />
+              </div>
+
+              <div class="budget-slider-group" style="margin-top: var(--space-3);">
+                <div class="budget-slider-row">
+                  <span class="budget-label">Annualized Expected Return</span>
+                  <span id="proj-return-value" class="budget-slider-value">12%</span>
+                </div>
+                <input type="range" id="proj-return" class="budget-slider" min="1" max="25" step="0.5" value="12" />
+              </div>
+
+              <div class="budget-slider-group" style="margin-top: var(--space-3);">
+                <div class="budget-slider-row">
+                  <span class="budget-label">Inflation Rate</span>
+                  <span id="proj-inflation-value" class="budget-slider-value">6%</span>
+                </div>
+                <input type="range" id="proj-inflation" class="budget-slider" min="0" max="15" step="0.5" value="6" />
+              </div>
+
+              <!-- Nominal vs Real Toggle -->
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-top: var(--space-4); padding-top: var(--space-3); border-top: 1px solid var(--border-hairline);">
+                <span class="budget-label">Inflation Adjustment:</span>
+                <div class="toggle-group">
+                  <span id="proj-label-nominal" class="toggle-label active">Nominal</span>
+                  <div id="proj-real-toggle" class="toggle-switch" role="switch" aria-label="Toggle inflation adjustment" tabindex="0"></div>
+                  <span id="proj-label-real" class="toggle-label">Real (Inflation Adjusted)</span>
+                </div>
+              </div>
+
+              <!-- Rule of 72 Callout -->
+              <div id="rule-of-72" class="callout callout-info" style="margin-top: var(--space-4);">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+
+            <!-- Projection Chart -->
+            <div class="card">
+              <div class="card-header">
+                <div>
+                  <h3 class="card-title">Multi-Year Growth Trajectory</h3>
+                  <div class="card-subtitle">Projected corpus accumulation by allocation bucket</div>
+                </div>
+              </div>
+              <div style="width: 100%; min-height: 280px;">
+                <svg id="budget-projection-svg" class="chart-svg" viewBox="0 0 600 280" style="width: 100%; height: 280px;"></svg>
+              </div>
+            </div>
+
+            <!-- Projection Summary -->
+            <div id="budget-summary" class="card">
+              <!-- Dynamically populated -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Persistent Footer Notice -->
+      <footer id="data-notice" class="data-notice" style="margin-top: var(--space-6); text-align: center; color: var(--ink-muted); font-size: var(--text-xs); padding: var(--space-4) 0; border-top: 1px solid var(--border-hairline);">
+        Ledgerline • Real-time Indian Market Data via Tavily & Twelve Data
+      </footer>
+    </main>
+  </div>
+
+  <!-- Application Data & Logic Modules in Strict Dependency Order -->
+  <script src="data/snapshot.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/compare.js"></script>
+  <script src="js/budget.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

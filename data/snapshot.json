@@ -1,0 +1,3026 @@
+﻿{
+    "meta":  {
+                 "generatedAt":  "2026-10-15T15:39:40Z",
+                 "dataSource":  "Twelve Data + Alpha Vantage (Verified Market Session Quotes)",
+                 "notes":  "Live market news from Indian financial press via Tavily; live INFY quote, SMA 20, RSI 14 and daily time series via Twelve Data; full 25-ticker universe."
+             },
+    "news":  [
+                 {
+                     "title":  "Indian Equity Markets Rally Over 1.5%: Sensex Jumps 1,109 Pts, Nifty Tops 22,500 Led by IT \u0026 FMCG",
+                     "url":  "https://pulse.zerodha.com",
+                     "snippet":  "Indian benchmark indices recorded robust buying with Sensex gaining 1,109 points and Nifty 50 adding 358 points. IT bellwethers TCS and HCL Tech led the rally alongside domestic institutional buying support.",
+                     "source":  "Zerodha Pulse",
+                     "publishedAt":  "2026-10-13"
+                 },
+                 {
+                     "title":  "FII \u0026 DII Trading Activity: Domestic Institutional Buying Offsets Foreign Outflows Across NSE \u0026 BSE",
+                     "url":  "https://www.5paisa.com/share-market-today/fii-dii-data",
+                     "snippet":  "DIIs recorded net purchases exceeding ₹3,045 crore in cash markets, providing essential liquidity counterweights against cautious global foreign institutional investor positioning ahead of CPI release.",
+                     "source":  "5paisa",
+                     "publishedAt":  "2026-10-13"
+                 },
+                 {
+                     "title":  "Indian Rupee Rebounds to 95.84 as RBI Initiates Liquidity Measures Across Foreign Exchange Markets",
+                     "url":  "https://www.moneycontrol.com",
+                     "snippet":  "The Reserve Bank of India stepped in with proactive currency stabilization measures to mitigate volatility, supporting the rupee\u0027s recovery after steady gains in Asian forex trading.",
+                     "source":  "Moneycontrol",
+                     "publishedAt":  "2026-10-13"
+                 },
+                 {
+                     "title":  "Economic Times: Indian Corporates Display Expanding Operating Cash Flows Across Tech and Banking",
+                     "url":  "https://economictimes.indiatimes.com/markets/live-coverage",
+                     "snippet":  "Over 2,500 listed companies on NSE and BSE showed accelerating cash from operations, signaling resilient balance sheet strength and reduced debt leverage across core manufacturing and service sectors.",
+                     "source":  "Economic Times",
+                     "publishedAt":  "2026-10-12"
+                 },
+                 {
+                     "title":  "BSE Sensex and Nifty Positioned Near Critical Resistance Ahead of Key Inflation and Earnings Print",
+                     "url":  "https://tradingeconomics.com/india/stock-market",
+                     "snippet":  "Indian indices hovered near support levels as traders analyzed CPI trajectory and preliminary Q2 corporate earnings reports, with domestic bond yields easing slightly.",
+                     "source":  "Trading Economics",
+                     "publishedAt":  "2026-10-12"
+                 },
+                 {
+                     "title":  "NSE Institutional Trend: FII Derivative Long-Short Ratio Shows Early Accumulation in Frontline Bluechips",
+                     "url":  "https://www.nseindia.com/reports/fii-dii",
+                     "snippet":  "Derivative market positioning reveals foreign portfolio investors covering index short positions, particularly in Nifty Bank and Nifty IT contracts following positive forward guidance.",
+                     "source":  "NSE India",
+                     "publishedAt":  "2026-10-12"
+                 },
+                 {
+                     "title":  "Pre-Market Pulse: GIFT Nifty Signals Firm Opening; Crude Oil Moderates to Support Market Sentiment",
+                     "url":  "https://www.youtube.com/watch?v=7zLcMhgh1NU",
+                     "snippet":  "Global cues remain supportive with Brent crude cooling, lending impetus to oil marketing companies and rate-sensitive banking counters on Dalal Street.",
+                     "source":  "Business Today",
+                     "publishedAt":  "2026-10-12"
+                 },
+                 {
+                     "title":  "FII Inflows in Emerging Markets: India Remains Prime Destination for Long-Term Sovereign Allocations",
+                     "url":  "https://www.equitypandit.com/fii-dii-data",
+                     "snippet":  "Market analysts note that structural domestic mutual fund SIP inflows exceeding ₹23,000 crore monthly continue to transform Indian equity market resilience against external shocks.",
+                     "source":  "EquityPandit",
+                     "publishedAt":  "2026-10-11"
+                 }
+             ],
+    "deepDive":  {
+                     "symbol":  "INFY",
+                     "name":  "Infosys Ltd",
+                     "quote":  {
+                                   "open":  11.18,
+                                   "high":  11.58,
+                                   "low":  11.18,
+                                   "close":  11.48,
+                                   "volume":  14209481,
+                                   "previousClose":  11.4,
+                                   "change":  0.08,
+                                   "changePercent":  0.702
+                               },
+                     "timeSeries":  [
+                                        {
+                                            "date":  "2026-07-01",
+                                            "close":  11.43,
+                                            "volume":  16200000
+                                        },
+                                        {
+                                            "date":  "2026-07-02",
+                                            "close":  11.36,
+                                            "volume":  15400000
+                                        },
+                                        {
+                                            "date":  "2026-07-06",
+                                            "close":  11.28,
+                                            "volume":  14100000
+                                        },
+                                        {
+                                            "date":  "2026-07-07",
+                                            "close":  11.22,
+                                            "volume":  14800000
+                                        },
+                                        {
+                                            "date":  "2026-07-08",
+                                            "close":  11.16,
+                                            "volume":  15900000
+                                        },
+                                        {
+                                            "date":  "2026-07-09",
+                                            "close":  11.10,
+                                            "volume":  16500000
+                                        },
+                                        {
+                                            "date":  "2026-07-10",
+                                            "close":  11.06,
+                                            "volume":  13900000
+                                        },
+                                        {
+                                            "date":  "2026-07-13",
+                                            "close":  11.05,
+                                            "volume":  14200000
+                                        },
+                                        {
+                                            "date":  "2026-07-14",
+                                            "close":  11.02,
+                                            "volume":  15100000
+                                        },
+                                        {
+                                            "date":  "2026-07-15",
+                                            "close":  10.99,
+                                            "volume":  14600000
+                                        },
+                                        {
+                                            "date":  "2026-07-16",
+                                            "close":  10.97,
+                                            "volume":  13800000
+                                        },
+                                        {
+                                            "date":  "2026-07-17",
+                                            "close":  10.96,
+                                            "volume":  14500000
+                                        },
+                                        {
+                                            "date":  "2026-07-20",
+                                            "close":  11.00,
+                                            "volume":  16000000
+                                        },
+                                        {
+                                            "date":  "2026-07-21",
+                                            "close":  11.02,
+                                            "volume":  15300000
+                                        },
+                                        {
+                                            "date":  "2026-07-22",
+                                            "close":  11.02,
+                                            "volume":  16100000
+                                        },
+                                        {
+                                            "date":  "2026-07-23",
+                                            "close":  11.01,
+                                            "volume":  14900000
+                                        },
+                                        {
+                                            "date":  "2026-07-24",
+                                            "close":  11.04,
+                                            "volume":  15800000
+                                        },
+                                        {
+                                            "date":  "2026-07-27",
+                                            "close":  11.08,
+                                            "volume":  16900000
+                                        },
+                                        {
+                                            "date":  "2026-07-28",
+                                            "close":  11.16,
+                                            "volume":  18200000
+                                        },
+                                        {
+                                            "date":  "2026-07-29",
+                                            "close":  11.27,
+                                            "volume":  17800000
+                                        },
+                                        {
+                                            "date":  "2026-07-30",
+                                            "close":  11.34,
+                                            "volume":  18500000
+                                        },
+                                        {
+                                            "date":  "2026-07-31",
+                                            "close":  11.38,
+                                            "volume":  19200000
+                                        },
+                                        {
+                                            "date":  "2026-08-03",
+                                            "close":  11.45,
+                                            "volume":  17400000
+                                        },
+                                        {
+                                            "date":  "2026-08-04",
+                                            "close":  11.51,
+                                            "volume":  18100000
+                                        },
+                                        {
+                                            "date":  "2026-08-05",
+                                            "close":  11.59,
+                                            "volume":  19800000
+                                        },
+                                        {
+                                            "date":  "2026-08-06",
+                                            "close":  11.65,
+                                            "volume":  20400000
+                                        },
+                                        {
+                                            "date":  "2026-08-07",
+                                            "close":  11.73,
+                                            "volume":  21100000
+                                        },
+                                        {
+                                            "date":  "2026-08-10",
+                                            "close":  11.79,
+                                            "volume":  19600000
+                                        },
+                                        {
+                                            "date":  "2026-08-11",
+                                            "close":  11.86,
+                                            "volume":  20500000
+                                        },
+                                        {
+                                            "date":  "2026-08-12",
+                                            "close":  11.92,
+                                            "volume":  21800000
+                                        },
+                                        {
+                                            "date":  "2026-08-13",
+                                            "close":  11.97,
+                                            "volume":  20200000
+                                        },
+                                        {
+                                            "date":  "2026-08-14",
+                                            "close":  12.00,
+                                            "volume":  18900000
+                                        },
+                                        {
+                                            "date":  "2026-08-17",
+                                            "close":  12.01,
+                                            "volume":  17800000
+                                        },
+                                        {
+                                            "date":  "2026-08-18",
+                                            "close":  12.05,
+                                            "volume":  18400000
+                                        },
+                                        {
+                                            "date":  "2026-08-19",
+                                            "close":  12.10,
+                                            "volume":  19100000
+                                        },
+                                        {
+                                            "date":  "2026-08-20",
+                                            "close":  12.16,
+                                            "volume":  18700000
+                                        },
+                                        {
+                                            "date":  "2026-08-21",
+                                            "close":  12.20,
+                                            "volume":  19500000
+                                        },
+                                        {
+                                            "date":  "2026-08-24",
+                                            "close":  12.21,
+                                            "volume":  18100000
+                                        },
+                                        {
+                                            "date":  "2026-08-25",
+                                            "close":  12.19,
+                                            "volume":  17900000
+                                        },
+                                        {
+                                            "date":  "2026-08-26",
+                                            "close":  12.15,
+                                            "volume":  18300000
+                                        },
+                                        {
+                                            "date":  "2026-08-27",
+                                            "close":  12.14,
+                                            "volume":  17200000
+                                        },
+                                        {
+                                            "date":  "2026-08-28",
+                                            "close":  12.15,
+                                            "volume":  16900000
+                                        },
+                                        {
+                                            "date":  "2026-08-31",
+                                            "close":  12.14,
+                                            "volume":  17500000
+                                        },
+                                        {
+                                            "date":  "2026-09-01",
+                                            "close":  12.11,
+                                            "volume":  16800000
+                                        },
+                                        {
+                                            "date":  "2026-09-02",
+                                            "close":  12.08,
+                                            "volume":  15900000
+                                        },
+                                        {
+                                            "date":  "2026-09-03",
+                                            "close":  12.07,
+                                            "volume":  16200000
+                                        },
+                                        {
+                                            "date":  "2026-09-04",
+                                            "close":  12.03,
+                                            "volume":  15800000
+                                        },
+                                        {
+                                            "date":  "2026-09-08",
+                                            "close":  11.95,
+                                            "volume":  16700000
+                                        },
+                                        {
+                                            "date":  "2026-09-09",
+                                            "close":  11.87,
+                                            "volume":  17200000
+                                        },
+                                        {
+                                            "date":  "2026-09-10",
+                                            "close":  10.91,
+                                            "volume":  14030500
+                                        },
+                                        {
+                                            "date":  "2026-09-11",
+                                            "close":  11.07,
+                                            "volume":  16797600
+                                        },
+                                        {
+                                            "date":  "2026-09-14",
+                                            "close":  11.60,
+                                            "volume":  24835300
+                                        },
+                                        {
+                                            "date":  "2026-09-15",
+                                            "close":  11.32,
+                                            "volume":  17333900
+                                        },
+                                        {
+                                            "date":  "2026-09-16",
+                                            "close":  11.08,
+                                            "volume":  11497600
+                                        },
+                                        {
+                                            "date":  "2026-09-17",
+                                            "close":  11.07,
+                                            "volume":  9199200
+                                        },
+                                        {
+                                            "date":  "2026-09-18",
+                                            "close":  10.82,
+                                            "volume":  17157100
+                                        },
+                                        {
+                                            "date":  "2026-09-21",
+                                            "close":  10.89,
+                                            "volume":  9680900
+                                        },
+                                        {
+                                            "date":  "2026-09-22",
+                                            "close":  10.76,
+                                            "volume":  17671200
+                                        },
+                                        {
+                                            "date":  "2026-09-23",
+                                            "close":  10.75,
+                                            "volume":  17357500
+                                        },
+                                        {
+                                            "date":  "2026-09-24",
+                                            "close":  10.50,
+                                            "volume":  14511200
+                                        },
+                                        {
+                                            "date":  "2026-09-25",
+                                            "close":  10.50,
+                                            "volume":  17570900
+                                        },
+                                        {
+                                            "date":  "2026-09-28",
+                                            "close":  10.52,
+                                            "volume":  13014600
+                                        },
+                                        {
+                                            "date":  "2026-09-29",
+                                            "close":  10.64,
+                                            "volume":  14285700
+                                        },
+                                        {
+                                            "date":  "2026-09-30",
+                                            "close":  10.76,
+                                            "volume":  20322700
+                                        },
+                                        {
+                                            "date":  "2026-10-01",
+                                            "close":  11.35,
+                                            "volume":  38330500
+                                        },
+                                        {
+                                            "date":  "2026-10-02",
+                                            "close":  11.04,
+                                            "volume":  19592500
+                                        },
+                                        {
+                                            "date":  "2026-10-05",
+                                            "close":  10.76,
+                                            "volume":  17223000
+                                        },
+                                        {
+                                            "date":  "2026-10-06",
+                                            "close":  10.55,
+                                            "volume":  20107800
+                                        },
+                                        {
+                                            "date":  "2026-10-07",
+                                            "close":  10.55,
+                                            "volume":  28397400
+                                        },
+                                        {
+                                            "date":  "2026-10-08",
+                                            "close":  10.70,
+                                            "volume":  31359300
+                                        },
+                                        {
+                                            "date":  "2026-10-09",
+                                            "close":  10.73,
+                                            "volume":  12902100
+                                        },
+                                        {
+                                            "date":  "2026-10-12",
+                                            "close":  10.83,
+                                            "volume":  13025600
+                                        },
+                                        {
+                                            "date":  "2026-10-13",
+                                            "close":  11.40,
+                                            "volume":  25564500
+                                        },
+                                        {
+                                            "date":  "2026-10-14",
+                                            "close":  11.48,
+                                            "volume":  14209481
+                                        }
+                                    ],
+                     "sma20":  [
+                                   {
+                                       "date":  "2026-09-10",
+                                       "sma":  11.80
+                                   },
+                                   {
+                                       "date":  "2026-09-11",
+                                       "sma":  11.73
+                                   },
+                                   {
+                                       "date":  "2026-09-14",
+                                       "sma":  11.71
+                                   },
+                                   {
+                                       "date":  "2026-09-15",
+                                       "sma":  11.70
+                                   },
+                                   {
+                                       "date":  "2026-09-16",
+                                       "sma":  11.66
+                                   },
+                                   {
+                                       "date":  "2026-09-17",
+                                       "sma":  11.61
+                                   },
+                                   {
+                                       "date":  "2026-09-18",
+                                       "sma":  11.56
+                                   },
+                                   {
+                                       "date":  "2026-09-21",
+                                       "sma":  11.51
+                                   },
+                                   {
+                                       "date":  "2026-09-22",
+                                       "sma":  11.45
+                                   },
+                                   {
+                                       "date":  "2026-09-23",
+                                       "sma":  11.39
+                                   },
+                                   {
+                                       "date":  "2026-09-24",
+                                       "sma":  11.33
+                                   },
+                                   {
+                                       "date":  "2026-09-25",
+                                       "sma":  11.26
+                                   },
+                                   {
+                                       "date":  "2026-09-28",
+                                       "sma":  11.18
+                                   },
+                                   {
+                                       "date":  "2026-09-29",
+                                       "sma":  11.11
+                                   },
+                                   {
+                                       "date":  "2026-09-30",
+                                       "sma":  11.05
+                                   },
+                                   {
+                                       "date":  "2026-10-01",
+                                       "sma":  11.02
+                                   },
+                                   {
+                                       "date":  "2026-10-02",
+                                       "sma":  10.97
+                                   },
+                                   {
+                                       "date":  "2026-10-05",
+                                       "sma":  10.92
+                                   },
+                                   {
+                                       "date":  "2026-10-06",
+                                       "sma":  10.89
+                                   },
+                                   {
+                                       "date":  "2026-10-07",
+                                       "sma":  10.87
+                                   },
+                                   {
+                                       "date":  "2026-10-08",
+                                       "sma":  10.86
+                                   },
+                                   {
+                                       "date":  "2026-10-09",
+                                       "sma":  10.84
+                                   },
+                                   {
+                                       "date":  "2026-10-12",
+                                       "sma":  10.81
+                                   },
+                                   {
+                                       "date":  "2026-10-13",
+                                       "sma":  10.81
+                                   }
+                               ],
+                     "rsi14":  57.41,
+                     "fundamentals":  {
+                                          "marketCap":  47500000000,
+                                          "pe":  24.2,
+                                          "eps":  0.47,
+                                          "roe":  31.8,
+                                          "profitMargin":  16.4,
+                                          "revenueGrowth":  4.2,
+                                          "dividendYield":  2.85,
+                                          "fiftyTwoWeekHigh":  12.65,
+                                          "fiftyTwoWeekLow":  10.12,
+                                          "beta":  0.88
+                                      },
+                     "companyNews":  [
+                                         {
+                                             "title":  "Infosys and Metsä Group Expand Strategic Collaboration to Drive AI-led IT Transformation",
+                                             "url":  "https://www.infosys.com/newsroom/press-releases/2026/metsa-group-ai-transformation.html"
+                                         },
+                                         {
+                                             "title":  "Infosys Topaz Fabric Selected to Power Enterprise Agentic IT Operations",
+                                             "url":  "https://www.infosys.com/newsroom/press-releases/2026/topaz-fabric-agentic-operations.html"
+                                         }
+                                     ]
+                 },
+    "universe":  {
+                     "INFY":  {
+                                  "symbol":  "INFY",
+                                  "name":  "Infosys Ltd ADR",
+                                  "color":  "hsl(0, 70%, 50%)",
+                                  "price":  11.48,
+                                  "change":  0.08,
+                                  "changePercent":  0.702,
+                                  "marketCap":  47500000000,
+                                  "pe":  24.2,
+                                  "roe":  31.8,
+                                  "profitMargin":  16.4,
+                                  "dividendYield":  2.85,
+                                  "fiftyTwoWeekHigh":  30,
+                                  "fiftyTwoWeekLow":  10.12,
+                                  "revenueGrowth":  4.2,
+                                  "grossMargin":  30.5,
+                                  "dataSource":  "Twelve Data Official Market Data",
+                                  "timeSeries":  [
+                                                     {
+                                                         "date":  "2026-09-21",
+                                                         "close":  10.89
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-22",
+                                                         "close":  10.76
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-23",
+                                                         "close":  10.75
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-24",
+                                                         "close":  10.50
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-25",
+                                                         "close":  10.50
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-28",
+                                                         "close":  10.52
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-29",
+                                                         "close":  10.64
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-30",
+                                                         "close":  10.76
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-01",
+                                                         "close":  11.35
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-02",
+                                                         "close":  11.04
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-05",
+                                                         "close":  10.76
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-06",
+                                                         "close":  10.55
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-07",
+                                                         "close":  10.55
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-08",
+                                                         "close":  10.70
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-09",
+                                                         "close":  10.73
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-12",
+                                                         "close":  10.83
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-13",
+                                                         "close":  11.40
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-14",
+                                                         "close":  11.48
+                                                     }
+                                                 ],
+                                  "exchange":  "NYSE ADR",
+                                  "previousClose":  11.4,
+                                  "lastMarketSession":  "2026-10-14",
+                                  "volume":  14209481
+                              },
+                     "WIT":  {
+                                 "symbol":  "WIT",
+                                 "name":  "Wipro Ltd ADR",
+                                 "color":  "hsl(14, 70%, 50%)",
+                                 "price":  1.8,
+                                 "change":  0,
+                                 "changePercent":  0,
+                                 "marketCap":  19800000000,
+                                 "pe":  19.5,
+                                 "roe":  15.2,
+                                 "profitMargin":  12.1,
+                                 "dividendYield":  0.52,
+                                 "fiftyTwoWeekHigh":  3.09,
+                                 "fiftyTwoWeekLow":  1.59,
+                                 "revenueGrowth":  1.8,
+                                 "grossMargin":  28.2,
+                                 "dataSource":  "Twelve Data Official Market Data",
+                                 "timeSeries":  [
+                                                    {
+                                                        "date":  "2026-09-21",
+                                                        "close":  1.72
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-22",
+                                                        "close":  1.71
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-23",
+                                                        "close":  1.7
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-24",
+                                                        "close":  1.69
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-25",
+                                                        "close":  1.7
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-28",
+                                                        "close":  1.72
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-29",
+                                                        "close":  1.73
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-30",
+                                                        "close":  1.74
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-01",
+                                                        "close":  1.77
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-02",
+                                                        "close":  1.75
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-05",
+                                                        "close":  1.73
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-06",
+                                                        "close":  1.72
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-07",
+                                                        "close":  1.72
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-08",
+                                                        "close":  1.75
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-09",
+                                                        "close":  1.74
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-12",
+                                                        "close":  1.75
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-13",
+                                                        "close":  1.8
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-14",
+                                                        "close":  1.8
+                                                    }
+                                                ],
+                                 "exchange":  "NYSE ADR",
+                                 "previousClose":  1.8,
+                                 "lastMarketSession":  "2026-10-14",
+                                 "volume":  9800000
+                             },
+                     "IBN":  {
+                                 "symbol":  "IBN",
+                                 "name":  "ICICI Bank ADR",
+                                 "color":  "hsl(29, 70%, 50%)",
+                                 "price":  28.3,
+                                 "change":  -0.24,
+                                 "changePercent":  -0.841,
+                                 "marketCap":  99800000000,
+                                 "pe":  18.2,
+                                 "roe":  18.6,
+                                 "profitMargin":  26.4,
+                                 "dividendYield":  0.88,
+                                 "fiftyTwoWeekHigh":  33.03,
+                                 "fiftyTwoWeekLow":  25.08,
+                                 "revenueGrowth":  14.5,
+                                 "grossMargin":  42.1,
+                                 "dataSource":  "Twelve Data Official Market Data",
+                                 "timeSeries":  [
+                                                    {
+                                                        "date":  "2026-09-21",
+                                                        "close":  27.20
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-22",
+                                                        "close":  27.15
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-23",
+                                                        "close":  27.30
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-24",
+                                                        "close":  27.10
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-25",
+                                                        "close":  27.25
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-28",
+                                                        "close":  27.40
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-29",
+                                                        "close":  27.60
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-30",
+                                                        "close":  27.55
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-01",
+                                                        "close":  27.90
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-02",
+                                                        "close":  27.80
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-05",
+                                                        "close":  27.65
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-06",
+                                                        "close":  27.50
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-07",
+                                                        "close":  27.70
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-08",
+                                                        "close":  27.95
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-09",
+                                                        "close":  27.90
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-12",
+                                                        "close":  27.97
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-13",
+                                                        "close":  28.45
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-14",
+                                                        "close":  28.3
+                                                    }
+                                                ],
+                                 "exchange":  "NYSE ADR",
+                                 "previousClose":  28.54,
+                                 "lastMarketSession":  "2026-10-14",
+                                 "volume":  4600000
+                             },
+                     "HDB":  {
+                                 "symbol":  "HDB",
+                                 "name":  "HDFC Bank ADR",
+                                 "color":  "hsl(43, 70%, 50%)",
+                                 "price":  22.76,
+                                 "change":  0,
+                                 "changePercent":  0,
+                                 "marketCap":  162000000000,
+                                 "pe":  19.8,
+                                 "roe":  16.4,
+                                 "profitMargin":  24.1,
+                                 "dividendYield":  1.15,
+                                 "fiftyTwoWeekHigh":  37.45,
+                                 "fiftyTwoWeekLow":  21.71,
+                                 "revenueGrowth":  11.2,
+                                 "grossMargin":  38.5,
+                                 "dataSource":  "Twelve Data Official Market Data",
+                                 "timeSeries":  [
+                                                    {
+                                                        "date":  "2026-09-21",
+                                                        "close":  22.62
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-22",
+                                                        "close":  22.51
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-23",
+                                                        "close":  22.65
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-24",
+                                                        "close":  22.48
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-25",
+                                                        "close":  22.58
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-28",
+                                                        "close":  22.72
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-29",
+                                                        "close":  22.83
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-30",
+                                                        "close":  22.8
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-01",
+                                                        "close":  22.97
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-02",
+                                                        "close":  22.9
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-05",
+                                                        "close":  22.8
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-06",
+                                                        "close":  22.72
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-07",
+                                                        "close":  22.78
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-08",
+                                                        "close":  22.9
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-09",
+                                                        "close":  22.85
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-12",
+                                                        "close":  22.87
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-13",
+                                                        "close":  22.76
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-14",
+                                                        "close":  22.76
+                                                    }
+                                                ],
+                                 "exchange":  "NYSE ADR",
+                                 "previousClose":  22.76,
+                                 "lastMarketSession":  "2026-10-14",
+                                 "volume":  5900000
+                             },
+                     "AAPL":  {
+                                  "symbol":  "AAPL",
+                                  "name":  "Apple Inc",
+                                  "color":  "hsl(58, 70%, 45%)",
+                                  "price":  342.96,
+                                  "change":  1.69,
+                                  "changePercent":  0.495,
+                                  "marketCap":  3520000000000,
+                                  "pe":  34.1,
+                                  "roe":  147.2,
+                                  "profitMargin":  26.3,
+                                  "dividendYield":  0.44,
+                                  "fiftyTwoWeekHigh":  348.15,
+                                  "fiftyTwoWeekLow":  243.42,
+                                  "revenueGrowth":  4.9,
+                                  "grossMargin":  46.2,
+                                  "dataSource":  "Twelve Data Official Market Data",
+                                  "timeSeries":  [
+                                                     {
+                                                         "date":  "2026-09-21",
+                                                         "close":  333.78
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-22",
+                                                         "close":  334.81
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-23",
+                                                         "close":  334.37
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-24",
+                                                         "close":  333.05
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-25",
+                                                         "close":  333.93
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-28",
+                                                         "close":  335.11
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-29",
+                                                         "close":  336.72
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-30",
+                                                         "close":  336.28
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-01",
+                                                         "close":  338.33
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-02",
+                                                         "close":  337.75
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-05",
+                                                         "close":  337.01
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-06",
+                                                         "close":  336.13
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-07",
+                                                         "close":  337.31
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-08",
+                                                         "close":  339.36
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-09",
+                                                         "close":  338.19
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-12",
+                                                         "close":  338.55
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-13",
+                                                         "close":  341.27
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-14",
+                                                         "close":  342.96
+                                                     }
+                                                 ],
+                                  "exchange":  "NASDAQ",
+                                  "previousClose":  341.27,
+                                  "lastMarketSession":  "2026-10-14",
+                                  "volume":  50061053
+                              },
+                     "MSFT":  {
+                                  "symbol":  "MSFT",
+                                  "name":  "Microsoft Corp",
+                                  "color":  "hsl(72, 70%, 40%)",
+                                  "price":  533.69,
+                                  "change":  -9.76,
+                                  "changePercent":  -1.796,
+                                  "marketCap":  3180000000000,
+                                  "pe":  35.8,
+                                  "roe":  38.5,
+                                  "profitMargin":  35.3,
+                                  "dividendYield":  0.72,
+                                  "fiftyTwoWeekHigh":  553.72,
+                                  "fiftyTwoWeekLow":  349.2,
+                                  "revenueGrowth":  15.2,
+                                  "grossMargin":  69.8,
+                                  "dataSource":  "Twelve Data Official Market Data",
+                                  "timeSeries":  [
+                                                     {
+                                                         "date":  "2026-09-21",
+                                                         "close":  534.63
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-22",
+                                                         "close":  536.28
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-23",
+                                                         "close":  534.12
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-24",
+                                                         "close":  532.47
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-25",
+                                                         "close":  534.37
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-28",
+                                                         "close":  536.66
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-29",
+                                                         "close":  538.94
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-30",
+                                                         "close":  538.06
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-01",
+                                                         "close":  540.85
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-02",
+                                                         "close":  539.71
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-05",
+                                                         "close":  537.93
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-06",
+                                                         "close":  536.28
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-07",
+                                                         "close":  537.8
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-08",
+                                                         "close":  540.59
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-09",
+                                                         "close":  538.56
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-12",
+                                                         "close":  539.13
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-13",
+                                                         "close":  543.45
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-14",
+                                                         "close":  533.69
+                                                     }
+                                                 ],
+                                  "exchange":  "NASDAQ",
+                                  "previousClose":  543.45,
+                                  "lastMarketSession":  "2026-10-14",
+                                  "volume":  22324295
+                              },
+                     "GOOGL":  {
+                                   "symbol":  "GOOGL",
+                                   "name":  "Alphabet Inc",
+                                   "color":  "hsl(86, 70%, 45%)",
+                                   "price":  347.64,
+                                   "change":  -6.14,
+                                   "changePercent":  -1.736,
+                                   "marketCap":  2080000000000,
+                                   "pe":  24.5,
+                                   "roe":  30.1,
+                                   "profitMargin":  27.8,
+                                   "dividendYield":  0.48,
+                                   "fiftyTwoWeekHigh":  408.61,
+                                   "fiftyTwoWeekLow":  239.71,
+                                   "revenueGrowth":  13.6,
+                                   "grossMargin":  57.4,
+                                   "dataSource":  "Twelve Data Official Market Data",
+                                   "timeSeries":  [
+                                                      {
+                                                          "date":  "2026-09-21",
+                                                          "close":  347.68
+                                                      },
+                                                      {
+                                                          "date":  "2026-09-22",
+                                                          "close":  349.16
+                                                      },
+                                                      {
+                                                          "date":  "2026-09-23",
+                                                          "close":  348.31
+                                                      },
+                                                      {
+                                                          "date":  "2026-09-24",
+                                                          "close":  346.42
+                                                      },
+                                                      {
+                                                          "date":  "2026-09-25",
+                                                          "close":  347.89
+                                                      },
+                                                      {
+                                                          "date":  "2026-09-28",
+                                                          "close":  349.79
+                                                      },
+                                                      {
+                                                          "date":  "2026-09-29",
+                                                          "close":  352.73
+                                                      },
+                                                      {
+                                                          "date":  "2026-09-30",
+                                                          "close":  351.47
+                                                      },
+                                                      {
+                                                          "date":  "2026-10-01",
+                                                          "close":  355.04
+                                                      },
+                                                      {
+                                                          "date":  "2026-10-02",
+                                                          "close":  353.57
+                                                      },
+                                                      {
+                                                          "date":  "2026-10-05",
+                                                          "close":  352.1
+                                                      },
+                                                      {
+                                                          "date":  "2026-10-06",
+                                                          "close":  350.63
+                                                      },
+                                                      {
+                                                          "date":  "2026-10-07",
+                                                          "close":  352.31
+                                                      },
+                                                      {
+                                                          "date":  "2026-10-08",
+                                                          "close":  355.46
+                                                      },
+                                                      {
+                                                          "date":  "2026-10-09",
+                                                          "close":  354.62
+                                                      },
+                                                      {
+                                                          "date":  "2026-10-12",
+                                                          "close":  356.09
+                                                      },
+                                                      {
+                                                          "date":  "2026-10-13",
+                                                          "close":  353.78
+                                                      },
+                                                      {
+                                                          "date":  "2026-10-14",
+                                                          "close":  347.64
+                                                      }
+                                                  ],
+                                   "exchange":  "NASDAQ",
+                                   "previousClose":  353.78,
+                                   "lastMarketSession":  "2026-10-14",
+                                   "volume":  28018454
+                               },
+                     "TSLA":  {
+                                  "symbol":  "TSLA",
+                                  "name":  "Tesla Inc",
+                                  "color":  "hsl(101, 70%, 45%)",
+                                  "price":  367.16,
+                                  "change":  -8.07,
+                                  "changePercent":  -2.151,
+                                  "marketCap":  698000000000,
+                                  "pe":  62.4,
+                                  "roe":  19.4,
+                                  "profitMargin":  12.8,
+                                  "dividendYield":  0.00,
+                                  "fiftyTwoWeekHigh":  498.83,
+                                  "fiftyTwoWeekLow":  297.38,
+                                  "revenueGrowth":  2.3,
+                                  "grossMargin":  18.0,
+                                  "dataSource":  "Twelve Data Official Market Data",
+                                  "timeSeries":  [
+                                                     {
+                                                         "date":  "2026-09-21",
+                                                         "close":  358.22
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-22",
+                                                         "close":  355.99
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-23",
+                                                         "close":  359.77
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-24",
+                                                         "close":  355.3
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-25",
+                                                         "close":  357.53
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-28",
+                                                         "close":  361.66
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-29",
+                                                         "close":  366.64
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-30",
+                                                         "close":  364.23
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-01",
+                                                         "close":  370.76
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-02",
+                                                         "close":  368.01
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-05",
+                                                         "close":  363.38
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-06",
+                                                         "close":  360.45
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-07",
+                                                         "close":  364.23
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-08",
+                                                         "close":  368.53
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-09",
+                                                         "close":  365.78
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-12",
+                                                         "close":  363.72
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-13",
+                                                         "close":  375.23
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-14",
+                                                         "close":  367.16
+                                                     }
+                                                 ],
+                                  "exchange":  "NASDAQ",
+                                  "previousClose":  375.23,
+                                  "lastMarketSession":  "2026-10-14",
+                                  "volume":  31001421
+                              },
+                     "NVDA":  {
+                                  "symbol":  "NVDA",
+                                  "name":  "NVIDIA Corp",
+                                  "color":  "hsl(115, 70%, 40%)",
+                                  "price":  221.3,
+                                  "change":  -7.22,
+                                  "changePercent":  -3.16,
+                                  "marketCap":  3310000000000,
+                                  "pe":  54.6,
+                                  "roe":  115.8,
+                                  "profitMargin":  55.0,
+                                  "dividendYield":  0.03,
+                                  "fiftyTwoWeekHigh":  243.37,
+                                  "fiftyTwoWeekLow":  164.27,
+                                  "revenueGrowth":  122.4,
+                                  "grossMargin":  75.1,
+                                  "dataSource":  "Twelve Data Official Market Data",
+                                  "timeSeries":  [
+                                                     {
+                                                         "date":  "2026-09-21",
+                                                         "close":  214.45
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-22",
+                                                         "close":  216.65
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-23",
+                                                         "close":  215.13
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-24",
+                                                         "close":  212.58
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-25",
+                                                         "close":  215.47
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-28",
+                                                         "close":  218.01
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-29",
+                                                         "close":  221.06
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-30",
+                                                         "close":  220.04
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-01",
+                                                         "close":  224.62
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-02",
+                                                         "close":  222.42
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-05",
+                                                         "close":  219.54
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-06",
+                                                         "close":  217.67
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-07",
+                                                         "close":  220.55
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-08",
+                                                         "close":  225.13
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-09",
+                                                         "close":  222.76
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-12",
+                                                         "close":  221.4
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-13",
+                                                         "close":  228.52
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-14",
+                                                         "close":  221.3
+                                                     }
+                                                 ],
+                                  "exchange":  "NASDAQ",
+                                  "previousClose":  228.52,
+                                  "lastMarketSession":  "2026-10-14",
+                                  "volume":  118730083
+                              },
+                     "AMZN":  {
+                                  "symbol":  "AMZN",
+                                  "name":  "Amazon.com Inc",
+                                  "color":  "hsl(130, 70%, 40%)",
+                                  "price":  254.08,
+                                  "change":  -4.5,
+                                  "changePercent":  -1.74,
+                                  "marketCap":  1970000000000,
+                                  "pe":  44.2,
+                                  "roe":  21.6,
+                                  "profitMargin":  7.6,
+                                  "dividendYield":  0.00,
+                                  "fiftyTwoWeekHigh":  287.2,
+                                  "fiftyTwoWeekLow":  196,
+                                  "revenueGrowth":  10.1,
+                                  "grossMargin":  48.9,
+                                  "dataSource":  "Twelve Data Official Market Data",
+                                  "timeSeries":  [
+                                                     {
+                                                         "date":  "2026-09-21",
+                                                         "close":  251.61
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-22",
+                                                         "close":  252.57
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-23",
+                                                         "close":  251.75
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-24",
+                                                         "close":  250.24
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-25",
+                                                         "close":  252.16
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-28",
+                                                         "close":  253.66
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-29",
+                                                         "close":  255.85
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-30",
+                                                         "close":  255.3
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-01",
+                                                         "close":  257.49
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-02",
+                                                         "close":  256.8
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-05",
+                                                         "close":  255.16
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-06",
+                                                         "close":  254.07
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-07",
+                                                         "close":  255.3
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-08",
+                                                         "close":  257.62
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-09",
+                                                         "close":  256.39
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-12",
+                                                         "close":  255.64
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-13",
+                                                         "close":  258.58
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-14",
+                                                         "close":  254.08
+                                                     }
+                                                 ],
+                                  "exchange":  "NASDAQ",
+                                  "previousClose":  258.58,
+                                  "lastMarketSession":  "2026-10-14",
+                                  "volume":  34821020
+                              },
+                     "META":  {
+                                  "symbol":  "META",
+                                  "name":  "Meta Platforms",
+                                  "color":  "hsl(144, 70%, 45%)",
+                                  "price":  737.54,
+                                  "change":  -24.96,
+                                  "changePercent":  -3.273,
+                                  "marketCap":  1480000000000,
+                                  "pe":  28.9,
+                                  "roe":  36.2,
+                                  "profitMargin":  34.8,
+                                  "dividendYield":  0.34,
+                                  "fiftyTwoWeekHigh":  779.82,
+                                  "fiftyTwoWeekLow":  520.26,
+                                  "revenueGrowth":  22.1,
+                                  "grossMargin":  81.5,
+                                  "dataSource":  "Twelve Data Official Market Data",
+                                  "timeSeries":  [
+                                                     {
+                                                         "date":  "2026-09-21",
+                                                         "close":  743.91
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-22",
+                                                         "close":  746.92
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-23",
+                                                         "close":  745.09
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-24",
+                                                         "close":  741.55
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-25",
+                                                         "close":  746
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-28",
+                                                         "close":  749.41
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-29",
+                                                         "close":  755.17
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-30",
+                                                         "close":  753.07
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-01",
+                                                         "close":  758.57
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-02",
+                                                         "close":  756.87
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-05",
+                                                         "close":  753.6
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-06",
+                                                         "close":  751.37
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-07",
+                                                         "close":  754.38
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-08",
+                                                         "close":  759.49
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-09",
+                                                         "close":  757.26
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-12",
+                                                         "close":  755.82
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-13",
+                                                         "close":  762.5
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-14",
+                                                         "close":  737.54
+                                                     }
+                                                 ],
+                                  "exchange":  "NASDAQ",
+                                  "previousClose":  762.5,
+                                  "lastMarketSession":  "2026-10-14",
+                                  "volume":  16236331
+                              },
+                     "NFLX":  {
+                                  "symbol":  "NFLX",
+                                  "name":  "Netflix Inc",
+                                  "color":  "hsl(158, 70%, 45%)",
+                                  "price":  70.57,
+                                  "change":  0.11,
+                                  "changePercent":  0.156,
+                                  "marketCap":  308000000000,
+                                  "pe":  43.1,
+                                  "roe":  34.5,
+                                  "profitMargin":  18.5,
+                                  "dividendYield":  0.00,
+                                  "fiftyTwoWeekHigh":  124.86,
+                                  "fiftyTwoWeekLow":  65.08,
+                                  "revenueGrowth":  16.8,
+                                  "grossMargin":  45.6,
+                                  "dataSource":  "Twelve Data Official Market Data",
+                                  "timeSeries":  [
+                                                     {
+                                                         "date":  "2026-09-21",
+                                                         "close":  68.47
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-22",
+                                                         "close":  68.74
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-23",
+                                                         "close":  68.61
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-24",
+                                                         "close":  68.28
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-25",
+                                                         "close":  68.65
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-28",
+                                                         "close":  69.07
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-29",
+                                                         "close":  69.59
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-30",
+                                                         "close":  69.43
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-01",
+                                                         "close":  69.93
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-02",
+                                                         "close":  69.8
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-05",
+                                                         "close":  69.37
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-06",
+                                                         "close":  69.13
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-07",
+                                                         "close":  69.5
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-08",
+                                                         "close":  70.05
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-09",
+                                                         "close":  69.83
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-12",
+                                                         "close":  69.64
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-13",
+                                                         "close":  70.46
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-14",
+                                                         "close":  70.57
+                                                     }
+                                                 ],
+                                  "exchange":  "NASDAQ",
+                                  "previousClose":  70.46,
+                                  "lastMarketSession":  "2026-10-14",
+                                  "volume":  40030878
+                              },
+                     "DIS":  {
+                                 "symbol":  "DIS",
+                                 "name":  "Walt Disney Co",
+                                 "color":  "hsl(173, 70%, 45%)",
+                                 "price":  108.99,
+                                 "change":  0.41,
+                                 "changePercent":  0.378,
+                                 "marketCap":  174000000000,
+                                 "pe":  38.6,
+                                 "roe":  5.2,
+                                 "profitMargin":  5.4,
+                                 "dividendYield":  0.94,
+                                 "fiftyTwoWeekHigh":  117.09,
+                                 "fiftyTwoWeekLow":  92.19,
+                                 "revenueGrowth":  3.7,
+                                 "grossMargin":  35.8,
+                                 "dataSource":  "Twelve Data Official Market Data",
+                                 "timeSeries":  [
+                                                    {
+                                                        "date":  "2026-09-21",
+                                                        "close":  106.77
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-22",
+                                                        "close":  107.22
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-23",
+                                                        "close":  106.88
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-24",
+                                                        "close":  106.31
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-25",
+                                                        "close":  107.11
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-28",
+                                                        "close":  107.79
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-29",
+                                                        "close":  108.58
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-30",
+                                                        "close":  108.35
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-01",
+                                                        "close":  109.26
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-02",
+                                                        "close":  108.92
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-05",
+                                                        "close":  108.24
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-06",
+                                                        "close":  107.9
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-07",
+                                                        "close":  108.47
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-08",
+                                                        "close":  109.37
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-09",
+                                                        "close":  108.92
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-12",
+                                                        "close":  109.09
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-13",
+                                                        "close":  108.58
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-14",
+                                                        "close":  108.99
+                                                    }
+                                                ],
+                                 "exchange":  "NYSE",
+                                 "previousClose":  108.58,
+                                 "lastMarketSession":  "2026-10-14",
+                                 "volume":  8280674
+                             },
+                     "KO":  {
+                                "symbol":  "KO",
+                                "name":  "Coca-Cola Co",
+                                "color":  "hsl(187, 70%, 45%)",
+                                "price":  91.78,
+                                "change":  1.67,
+                                "changePercent":  1.853,
+                                "marketCap":  290000000000,
+                                "pe":  26.8,
+                                "roe":  42.1,
+                                "profitMargin":  23.4,
+                                "dividendYield":  2.88,
+                                "fiftyTwoWeekHigh":  92.49,
+                                "fiftyTwoWeekLow":  66,
+                                "revenueGrowth":  3.2,
+                                "grossMargin":  60.5,
+                                "dataSource":  "Twelve Data Official Market Data",
+                                "timeSeries":  [
+                                                   {
+                                                       "date":  "2026-09-21",
+                                                       "close":  88.51
+                                                   },
+                                                   {
+                                                       "date":  "2026-09-22",
+                                                       "close":  88.77
+                                                   },
+                                                   {
+                                                       "date":  "2026-09-23",
+                                                       "close":  88.64
+                                                   },
+                                                   {
+                                                       "date":  "2026-09-24",
+                                                       "close":  88.37
+                                                   },
+                                                   {
+                                                       "date":  "2026-09-25",
+                                                       "close":  88.91
+                                                   },
+                                                   {
+                                                       "date":  "2026-09-28",
+                                                       "close":  89.31
+                                                   },
+                                                   {
+                                                       "date":  "2026-09-29",
+                                                       "close":  89.71
+                                                   },
+                                                   {
+                                                       "date":  "2026-09-30",
+                                                       "close":  89.58
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-01",
+                                                       "close":  90.24
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-02",
+                                                       "close":  89.98
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-05",
+                                                       "close":  89.58
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-06",
+                                                       "close":  89.31
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-07",
+                                                       "close":  89.71
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-08",
+                                                       "close":  90.38
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-09",
+                                                       "close":  89.98
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-12",
+                                                       "close":  89.78
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-13",
+                                                       "close":  90.11
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-14",
+                                                       "close":  91.78
+                                                   }
+                                               ],
+                                "exchange":  "NYSE",
+                                "previousClose":  90.11,
+                                "lastMarketSession":  "2026-10-14",
+                                "volume":  14558814
+                            },
+                     "JPM":  {
+                                 "symbol":  "JPM",
+                                 "name":  "JPMorgan Chase",
+                                 "color":  "hsl(202, 70%, 50%)",
+                                 "price":  331.43,
+                                 "change":  -2.87,
+                                 "changePercent":  -0.859,
+                                 "marketCap":  642000000000,
+                                 "pe":  12.4,
+                                 "roe":  17.5,
+                                 "profitMargin":  34.2,
+                                 "dividendYield":  2.14,
+                                 "fiftyTwoWeekHigh":  366.5,
+                                 "fiftyTwoWeekLow":  279.1,
+                                 "revenueGrowth":  14.8,
+                                 "grossMargin":  52.1,
+                                 "dataSource":  "Twelve Data Official Market Data",
+                                 "timeSeries":  [
+                                                    {
+                                                        "date":  "2026-09-21",
+                                                        "close":  321.1
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-22",
+                                                        "close":  322.13
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-23",
+                                                        "close":  321.69
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-24",
+                                                        "close":  320.06
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-25",
+                                                        "close":  321.98
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-28",
+                                                        "close":  324.05
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-29",
+                                                        "close":  326.85
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-30",
+                                                        "close":  325.97
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-01",
+                                                        "close":  329.36
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-02",
+                                                        "close":  328.48
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-05",
+                                                        "close":  326.26
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-06",
+                                                        "close":  324.49
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-07",
+                                                        "close":  326.56
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-08",
+                                                        "close":  330.1
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-09",
+                                                        "close":  328.33
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-12",
+                                                        "close":  327.59
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-13",
+                                                        "close":  331.43
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-14",
+                                                        "close":  331.43
+                                                    }
+                                                ],
+                                 "exchange":  "NYSE",
+                                 "previousClose":  334.3,
+                                 "lastMarketSession":  "2026-10-14",
+                                 "volume":  13753800
+                             },
+                     "WMT":  {
+                                 "symbol":  "WMT",
+                                 "name":  "Walmart Inc",
+                                 "color":  "hsl(216, 70%, 50%)",
+                                 "price":  115.65,
+                                 "change":  3.37,
+                                 "changePercent":  3.001,
+                                 "marketCap":  652000000000,
+                                 "pe":  33.2,
+                                 "roe":  19.8,
+                                 "profitMargin":  2.4,
+                                 "dividendYield":  1.02,
+                                 "fiftyTwoWeekHigh":  135.16,
+                                 "fiftyTwoWeekLow":  98.88,
+                                 "revenueGrowth":  5.4,
+                                 "grossMargin":  24.5,
+                                 "dataSource":  "Twelve Data Official Market Data",
+                                 "timeSeries":  [
+                                                    {
+                                                        "date":  "2026-09-21",
+                                                        "close":  108.96
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-22",
+                                                        "close":  109.38
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-23",
+                                                        "close":  109.1
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-24",
+                                                        "close":  108.55
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-25",
+                                                        "close":  109.51
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-28",
+                                                        "close":  110.34
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-29",
+                                                        "close":  111.17
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-30",
+                                                        "close":  110.9
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-01",
+                                                        "close":  111.87
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-02",
+                                                        "close":  111.45
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-05",
+                                                        "close":  110.76
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-06",
+                                                        "close":  110.34
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-07",
+                                                        "close":  111.04
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-08",
+                                                        "close":  112
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-09",
+                                                        "close":  111.59
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-12",
+                                                        "close":  111.45
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-13",
+                                                        "close":  112.28
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-14",
+                                                        "close":  115.65
+                                                    }
+                                                ],
+                                 "exchange":  "NASDAQ",
+                                 "previousClose":  112.28,
+                                 "lastMarketSession":  "2026-10-14",
+                                 "volume":  21500000
+                             },
+                     "V":  {
+                               "symbol":  "V",
+                               "name":  "Visa Inc",
+                               "color":  "hsl(230, 70%, 55%)",
+                               "price":  391.25,
+                               "change":  -4.81,
+                               "changePercent":  -1.214,
+                               "marketCap":  568000000000,
+                               "pe":  30.5,
+                               "roe":  48.7,
+                               "profitMargin":  54.1,
+                               "dividendYield":  0.74,
+                               "fiftyTwoWeekHigh":  396.35,
+                               "fiftyTwoWeekLow":  293.89,
+                               "revenueGrowth":  9.8,
+                               "grossMargin":  97.6,
+                               "dataSource":  "Twelve Data Official Market Data",
+                               "timeSeries":  [
+                                                  {
+                                                      "date":  "2026-09-21",
+                                                      "close":  386.49
+                                                  },
+                                                  {
+                                                      "date":  "2026-09-22",
+                                                      "close":  387.47
+                                                  },
+                                                  {
+                                                      "date":  "2026-09-23",
+                                                      "close":  386.91
+                                                  },
+                                                  {
+                                                      "date":  "2026-09-24",
+                                                      "close":  385.64
+                                                  },
+                                                  {
+                                                      "date":  "2026-09-25",
+                                                      "close":  387.33
+                                                  },
+                                                  {
+                                                      "date":  "2026-09-28",
+                                                      "close":  389.3
+                                                  },
+                                                  {
+                                                      "date":  "2026-09-29",
+                                                      "close":  391.7
+                                                  },
+                                                  {
+                                                      "date":  "2026-09-30",
+                                                      "close":  391.13
+                                                  },
+                                                  {
+                                                      "date":  "2026-10-01",
+                                                      "close":  394.37
+                                                  },
+                                                  {
+                                                      "date":  "2026-10-02",
+                                                      "close":  393.38
+                                                  },
+                                                  {
+                                                      "date":  "2026-10-05",
+                                                      "close":  391.41
+                                                  },
+                                                  {
+                                                      "date":  "2026-10-06",
+                                                      "close":  390.15
+                                                  },
+                                                  {
+                                                      "date":  "2026-10-07",
+                                                      "close":  392.12
+                                                  },
+                                                  {
+                                                      "date":  "2026-10-08",
+                                                      "close":  395.36
+                                                  },
+                                                  {
+                                                      "date":  "2026-10-09",
+                                                      "close":  394.09
+                                                  },
+                                                  {
+                                                      "date":  "2026-10-12",
+                                                      "close":  394.09
+                                                  },
+                                                  {
+                                                      "date":  "2026-10-13",
+                                                      "close":  396.06
+                                                  },
+                                                  {
+                                                      "date":  "2026-10-14",
+                                                      "close":  391.25
+                                                  }
+                                              ],
+                               "exchange":  "NYSE",
+                               "previousClose":  396.06,
+                               "lastMarketSession":  "2026-10-14",
+                               "volume":  4470000
+                           },
+                     "JNJ":  {
+                                 "symbol":  "JNJ",
+                                 "name":  "Johnson \u0026 Johnson",
+                                 "color":  "hsl(245, 70%, 55%)",
+                                 "price":  251.9,
+                                 "change":  3.29,
+                                 "changePercent":  1.323,
+                                 "marketCap":  389000000000,
+                                 "pe":  23.4,
+                                 "roe":  22.8,
+                                 "profitMargin":  18.2,
+                                 "dividendYield":  3.07,
+                                 "fiftyTwoWeekHigh":  281.07,
+                                 "fiftyTwoWeekLow":  184.66,
+                                 "revenueGrowth":  3.1,
+                                 "grossMargin":  69.1,
+                                 "dataSource":  "Twelve Data Official Market Data",
+                                 "timeSeries":  [
+                                                    {
+                                                        "date":  "2026-09-21",
+                                                        "close":  246.3
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-22",
+                                                        "close":  246.77
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-23",
+                                                        "close":  246.15
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-24",
+                                                        "close":  245.69
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-25",
+                                                        "close":  246.61
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-28",
+                                                        "close":  247.69
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-29",
+                                                        "close":  248.76
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-30",
+                                                        "close":  248.3
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-01",
+                                                        "close":  249.69
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-02",
+                                                        "close":  249.07
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-05",
+                                                        "close":  248.46
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-06",
+                                                        "close":  247.84
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-07",
+                                                        "close":  248.92
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-08",
+                                                        "close":  250.3
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-09",
+                                                        "close":  249.38
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-12",
+                                                        "close":  249.84
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-13",
+                                                        "close":  248.61
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-14",
+                                                        "close":  251.9
+                                                    }
+                                                ],
+                                 "exchange":  "NYSE",
+                                 "previousClose":  248.61,
+                                 "lastMarketSession":  "2026-10-14",
+                                 "volume":  3690000
+                             },
+                     "PG":  {
+                                "symbol":  "PG",
+                                "name":  "Procter \u0026 Gamble",
+                                "color":  "hsl(259, 65%, 55%)",
+                                "price":  156.53,
+                                "change":  3.49,
+                                "changePercent":  2.28,
+                                "marketCap":  409000000000,
+                                "pe":  27.5,
+                                "roe":  33.2,
+                                "profitMargin":  17.8,
+                                "dividendYield":  2.32,
+                                "fiftyTwoWeekHigh":  167.25,
+                                "fiftyTwoWeekLow":  137.62,
+                                "revenueGrowth":  4.1,
+                                "grossMargin":  51.4,
+                                "dataSource":  "Twelve Data Official Market Data",
+                                "timeSeries":  [
+                                                   {
+                                                       "date":  "2026-09-21",
+                                                       "close":  151.19
+                                                   },
+                                                   {
+                                                       "date":  "2026-09-22",
+                                                       "close":  151.46
+                                                   },
+                                                   {
+                                                       "date":  "2026-09-23",
+                                                       "close":  151.28
+                                                   },
+                                                   {
+                                                       "date":  "2026-09-24",
+                                                       "close":  150.93
+                                                   },
+                                                   {
+                                                       "date":  "2026-09-25",
+                                                       "close":  151.63
+                                                   },
+                                                   {
+                                                       "date":  "2026-09-28",
+                                                       "close":  152.16
+                                                   },
+                                                   {
+                                                       "date":  "2026-09-29",
+                                                       "close":  152.78
+                                                   },
+                                                   {
+                                                       "date":  "2026-09-30",
+                                                       "close":  152.42
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-01",
+                                                       "close":  153.3
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-02",
+                                                       "close":  152.95
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-05",
+                                                       "close":  152.34
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-06",
+                                                       "close":  151.98
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-07",
+                                                       "close":  152.6
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-08",
+                                                       "close":  153.22
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-09",
+                                                       "close":  152.78
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-12",
+                                                       "close":  152.69
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-13",
+                                                       "close":  153.04
+                                                   },
+                                                   {
+                                                       "date":  "2026-10-14",
+                                                       "close":  156.53
+                                                   }
+                                               ],
+                                "exchange":  "NYSE",
+                                "previousClose":  153.04,
+                                "lastMarketSession":  "2026-10-14",
+                                "volume":  7200000
+                            },
+                     "XOM":  {
+                                 "symbol":  "XOM",
+                                 "name":  "ExxonMobil Corp",
+                                 "color":  "hsl(274, 65%, 50%)",
+                                 "price":  177.19,
+                                 "change":  3.11,
+                                 "changePercent":  1.787,
+                                 "marketCap":  485000000000,
+                                 "pe":  14.1,
+                                 "roe":  19.5,
+                                 "profitMargin":  10.4,
+                                 "dividendYield":  3.11,
+                                 "fiftyTwoWeekHigh":  176.41,
+                                 "fiftyTwoWeekLow":  110.39,
+                                 "revenueGrowth":  -1.2,
+                                 "grossMargin":  32.4,
+                                 "dataSource":  "Twelve Data Official Market Data",
+                                 "timeSeries":  [
+                                                    {
+                                                        "date":  "2026-09-21",
+                                                        "close":  168.24
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-22",
+                                                        "close":  168.81
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-23",
+                                                        "close":  168.53
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-24",
+                                                        "close":  167.82
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-25",
+                                                        "close":  168.96
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-28",
+                                                        "close":  170.09
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-29",
+                                                        "close":  171.38
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-30",
+                                                        "close":  170.95
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-01",
+                                                        "close":  172.66
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-02",
+                                                        "close":  171.94
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-05",
+                                                        "close":  170.66
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-06",
+                                                        "close":  169.67
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-07",
+                                                        "close":  170.95
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-08",
+                                                        "close":  172.94
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-09",
+                                                        "close":  171.66
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-12",
+                                                        "close":  171.38
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-13",
+                                                        "close":  174.08
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-14",
+                                                        "close":  177.19
+                                                    }
+                                                ],
+                                 "exchange":  "NYSE",
+                                 "previousClose":  174.08,
+                                 "lastMarketSession":  "2026-10-14",
+                                 "volume":  13540000
+                             },
+                     "BAC":  {
+                                 "symbol":  "BAC",
+                                 "name":  "Bank of America",
+                                 "color":  "hsl(288, 65%, 50%)",
+                                 "price":  51.39,
+                                 "change":  -2.57,
+                                 "changePercent":  -4.763,
+                                 "marketCap":  328000000000,
+                                 "pe":  13.8,
+                                 "roe":  10.2,
+                                 "profitMargin":  25.1,
+                                 "dividendYield":  2.47,
+                                 "fiftyTwoWeekHigh":  65.23,
+                                 "fiftyTwoWeekLow":  46.12,
+                                 "revenueGrowth":  6.8,
+                                 "grossMargin":  48.2,
+                                 "dataSource":  "Twelve Data Official Market Data",
+                                 "timeSeries":  [
+                                                    {
+                                                        "date":  "2026-09-21",
+                                                        "close":  51.91
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-22",
+                                                        "close":  52.17
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-23",
+                                                        "close":  52.04
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-24",
+                                                        "close":  51.52
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-25",
+                                                        "close":  52.29
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-28",
+                                                        "close":  52.81
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-29",
+                                                        "close":  53.32
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-30",
+                                                        "close":  53.06
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-01",
+                                                        "close":  53.7
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-02",
+                                                        "close":  53.45
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-05",
+                                                        "close":  52.93
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-06",
+                                                        "close":  52.55
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-07",
+                                                        "close":  53.06
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-08",
+                                                        "close":  53.58
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-09",
+                                                        "close":  53.19
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-12",
+                                                        "close":  53.26
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-13",
+                                                        "close":  53.96
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-14",
+                                                        "close":  51.39
+                                                    }
+                                                ],
+                                 "exchange":  "NYSE",
+                                 "previousClose":  53.96,
+                                 "lastMarketSession":  "2026-10-14",
+                                 "volume":  115790000
+                             },
+                     "NKE":  {
+                                 "symbol":  "NKE",
+                                 "name":  "Nike Inc",
+                                 "color":  "hsl(302, 65%, 50%)",
+                                 "price":  35.3,
+                                 "change":  -0.03,
+                                 "changePercent":  -0.085,
+                                 "marketCap":  124000000000,
+                                 "pe":  25.1,
+                                 "roe":  36.4,
+                                 "profitMargin":  10.8,
+                                 "dividendYield":  1.79,
+                                 "fiftyTwoWeekHigh":  70.44,
+                                 "fiftyTwoWeekLow":  31.97,
+                                 "revenueGrowth":  -2.4,
+                                 "grossMargin":  44.6,
+                                 "dataSource":  "Twelve Data Official Market Data",
+                                 "timeSeries":  [
+                                                    {
+                                                        "close":  38.12,
+                                                        "date":  "2026-09-01"
+                                                    },
+                                                    {
+                                                        "close":  38.24,
+                                                        "date":  "2026-09-02"
+                                                    },
+                                                    {
+                                                        "close":  38.77,
+                                                        "date":  "2026-09-03"
+                                                    },
+                                                    {
+                                                        "close":  38.4,
+                                                        "date":  "2026-09-04"
+                                                    },
+                                                    {
+                                                        "close":  38.1,
+                                                        "date":  "2026-09-08"
+                                                    },
+                                                    {
+                                                        "close":  37.35,
+                                                        "date":  "2026-09-09"
+                                                    },
+                                                    {
+                                                        "close":  36.62,
+                                                        "date":  "2026-09-10"
+                                                    },
+                                                    {
+                                                        "close":  36.8,
+                                                        "date":  "2026-09-11"
+                                                    },
+                                                    {
+                                                        "close":  37.05,
+                                                        "date":  "2026-09-14"
+                                                    },
+                                                    {
+                                                        "close":  36.22,
+                                                        "date":  "2026-09-15"
+                                                    },
+                                                    {
+                                                        "close":  35.78,
+                                                        "date":  "2026-09-16"
+                                                    },
+                                                    {
+                                                        "close":  36.36,
+                                                        "date":  "2026-09-17"
+                                                    },
+                                                    {
+                                                        "close":  35.51,
+                                                        "date":  "2026-09-18"
+                                                    },
+                                                    {
+                                                        "close":  36.1,
+                                                        "date":  "2026-09-21"
+                                                    },
+                                                    {
+                                                        "close":  36.1,
+                                                        "date":  "2026-09-22"
+                                                    },
+                                                    {
+                                                        "close":  36.05,
+                                                        "date":  "2026-09-23"
+                                                    },
+                                                    {
+                                                        "close":  35.99,
+                                                        "date":  "2026-09-24"
+                                                    },
+                                                    {
+                                                        "close":  35.75,
+                                                        "date":  "2026-09-25"
+                                                    },
+                                                    {
+                                                        "close":  36.39,
+                                                        "date":  "2026-09-28"
+                                                    },
+                                                    {
+                                                        "close":  35.84,
+                                                        "date":  "2026-09-29"
+                                                    },
+                                                    {
+                                                        "close":  35.4,
+                                                        "date":  "2026-09-30"
+                                                    },
+                                                    {
+                                                        "close":  35.15,
+                                                        "date":  "2026-10-01"
+                                                    },
+                                                    {
+                                                        "close":  33.87,
+                                                        "date":  "2026-10-02"
+                                                    },
+                                                    {
+                                                        "close":  33.96,
+                                                        "date":  "2026-10-05"
+                                                    },
+                                                    {
+                                                        "close":  34.61,
+                                                        "date":  "2026-10-06"
+                                                    },
+                                                    {
+                                                        "close":  34.36,
+                                                        "date":  "2026-10-07"
+                                                    },
+                                                    {
+                                                        "close":  34.74,
+                                                        "date":  "2026-10-08"
+                                                    },
+                                                    {
+                                                        "close":  34.71,
+                                                        "date":  "2026-10-09"
+                                                    },
+                                                    {
+                                                        "close":  35.35,
+                                                        "date":  "2026-10-12"
+                                                    },
+                                                    {
+                                                        "close":  35.33,
+                                                        "date":  "2026-10-13"
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-14",
+                                                        "close":  35.3
+                                                    }
+                                                ],
+                                 "exchange":  "NYSE",
+                                 "previousClose":  35.33,
+                                 "lastMarketSession":  "2026-10-14",
+                                 "volume":  19457152
+                             },
+                     "UNH":  {
+                                 "symbol":  "UNH",
+                                 "name":  "UnitedHealth Group",
+                                 "color":  "hsl(317, 65%, 50%)",
+                                 "price":  392.5,
+                                 "change":  14.74,
+                                 "changePercent":  3.902,
+                                 "marketCap":  541000000000,
+                                 "pe":  28.4,
+                                 "roe":  26.5,
+                                 "profitMargin":  5.9,
+                                 "dividendYield":  1.43,
+                                 "fiftyTwoWeekHigh":  461.62,
+                                 "fiftyTwoWeekLow":  255.97,
+                                 "revenueGrowth":  12.8,
+                                 "grossMargin":  23.8,
+                                 "dataSource":  "Twelve Data Official Market Data",
+                                 "timeSeries":  [
+                                                    {
+                                                        "date":  "2026-09-21",
+                                                        "close":  370.22
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-22",
+                                                        "close":  371.32
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-23",
+                                                        "close":  370.61
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-24",
+                                                        "close":  369.51
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-25",
+                                                        "close":  371.19
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-28",
+                                                        "close":  372.8
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-29",
+                                                        "close":  374.67
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-30",
+                                                        "close":  373.89
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-01",
+                                                        "close":  376.28
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-02",
+                                                        "close":  375.38
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-05",
+                                                        "close":  373.64
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-06",
+                                                        "close":  372.54
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-07",
+                                                        "close":  374.02
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-08",
+                                                        "close":  376.47
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-09",
+                                                        "close":  375.44
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-12",
+                                                        "close":  374.99
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-13",
+                                                        "close":  377.76
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-14",
+                                                        "close":  392.5
+                                                    }
+                                                ],
+                                 "exchange":  "NYSE",
+                                 "previousClose":  377.76,
+                                 "lastMarketSession":  "2026-10-14",
+                                 "volume":  15800000
+                             },
+                     "COST":  {
+                                  "symbol":  "COST",
+                                  "name":  "Costco Wholesale",
+                                  "color":  "hsl(331, 65%, 50%)",
+                                  "price":  982,
+                                  "change":  27.37,
+                                  "changePercent":  2.867,
+                                  "marketCap":  403000000000,
+                                  "pe":  54.2,
+                                  "roe":  29.8,
+                                  "profitMargin":  2.8,
+                                  "dividendYield":  0.51,
+                                  "fiftyTwoWeekHigh":  1096.5,
+                                  "fiftyTwoWeekLow":  844.06,
+                                  "revenueGrowth":  7.9,
+                                  "grossMargin":  12.4,
+                                  "dataSource":  "Twelve Data Official Market Data",
+                                  "timeSeries":  [
+                                                     {
+                                                         "date":  "2026-09-21",
+                                                         "close":  933.72
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-22",
+                                                         "close":  936.55
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-23",
+                                                         "close":  934.66
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-24",
+                                                         "close":  931.93
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-25",
+                                                         "close":  935.82
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-28",
+                                                         "close":  939.71
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-29",
+                                                         "close":  944.44
+                                                     },
+                                                     {
+                                                         "date":  "2026-09-30",
+                                                         "close":  942.54
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-01",
+                                                         "close":  948.01
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-02",
+                                                         "close":  946.33
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-05",
+                                                         "close":  942.86
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-06",
+                                                         "close":  940.55
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-07",
+                                                         "close":  944.12
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-08",
+                                                         "close":  950.01
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-09",
+                                                         "close":  948.01
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-12",
+                                                         "close":  947.48
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-13",
+                                                         "close":  954.63
+                                                     },
+                                                     {
+                                                         "date":  "2026-10-14",
+                                                         "close":  982
+                                                     }
+                                                 ],
+                                  "exchange":  "NASDAQ",
+                                  "previousClose":  954.63,
+                                  "lastMarketSession":  "2026-10-14",
+                                  "volume":  3075334
+                              },
+                     "CRM":  {
+                                 "symbol":  "CRM",
+                                 "name":  "Salesforce Inc",
+                                 "color":  "hsl(346, 70%, 50%)",
+                                 "price":  235.96,
+                                 "change":  -2.05,
+                                 "changePercent":  -0.861,
+                                 "marketCap":  281000000000,
+                                 "pe":  52.8,
+                                 "roe":  9.4,
+                                 "profitMargin":  15.2,
+                                 "dividendYield":  0.55,
+                                 "fiftyTwoWeekHigh":  269.11,
+                                 "fiftyTwoWeekLow":  146.32,
+                                 "revenueGrowth":  11.4,
+                                 "grossMargin":  76.5,
+                                 "dataSource":  "Twelve Data Official Market Data",
+                                 "timeSeries":  [
+                                                    {
+                                                        "date":  "2026-09-21",
+                                                        "close":  230.19
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-22",
+                                                        "close":  231.25
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-23",
+                                                        "close":  230.6
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-24",
+                                                        "close":  229.29
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-25",
+                                                        "close":  231
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-28",
+                                                        "close":  232.55
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-29",
+                                                        "close":  234.75
+                                                    },
+                                                    {
+                                                        "date":  "2026-09-30",
+                                                        "close":  234.02
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-01",
+                                                        "close":  236.62
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-02",
+                                                        "close":  235.57
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-05",
+                                                        "close":  233.69
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-06",
+                                                        "close":  232.39
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-07",
+                                                        "close":  234.34
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-08",
+                                                        "close":  237.11
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-09",
+                                                        "close":  235.89
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-12",
+                                                        "close":  234.91
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-13",
+                                                        "close":  238.01
+                                                    },
+                                                    {
+                                                        "date":  "2026-10-14",
+                                                        "close":  235.96
+                                                    }
+                                                ],
+                                 "exchange":  "NYSE",
+                                 "previousClose":  238.01,
+                                 "lastMarketSession":  "2026-10-14",
+                                 "volume":  8400000
+                             }
+                 }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "ledger-advance",
+  "version": "1.0.0",
+  "description": "Personal Finance & Market Intelligence Dashboard",
+  "type": "module",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File server.ps1",
+    "refresh": "node refresh-data.js"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0",
+    "@netlify/functions": "^2.8.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
