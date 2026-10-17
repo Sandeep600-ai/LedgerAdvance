@@ -154,9 +154,45 @@ while ($listener.IsListening) {
             }
         }
 
-        # 4. Resolve clean safe path
+        # 4. API Route: /.netlify/functions/alphavantage-series or /api/alphavantage-series
+        # Local dev: returns time series from snapshot.json (no external API call needed locally).
+        if ($rawPath -eq ".netlify/functions/alphavantage-series" -or $rawPath -eq "api/alphavantage-series") {
+            $symbol = $req.QueryString["symbol"]
+            if ([string]::IsNullOrWhiteSpace($symbol)) { $symbol = "INFY" }
+            $symbol = $symbol.ToUpper().Trim()
+
+            $snapshotFile = [System.IO.Path]::Combine($root, "data", "snapshot.json")
+            $localTimeSeries = @()
+            if ([System.IO.File]::Exists($snapshotFile)) {
+                $snapJson = [System.IO.File]::ReadAllText($snapshotFile, [System.Text.Encoding]::UTF8) | ConvertFrom-Json
+                if ($symbol -eq "INFY" -and $null -ne $snapJson.deepDive -and $null -ne $snapJson.deepDive.timeSeries) {
+                    $localTimeSeries = $snapJson.deepDive.timeSeries
+                } elseif ($null -ne $snapJson.universe.$symbol -and $null -ne $snapJson.universe.$symbol.timeSeries) {
+                    $localTimeSeries = $snapJson.universe.$symbol.timeSeries
+                }
+            }
+
+            $avResultObj = [PSCustomObject]@{
+                symbol     = $symbol
+                timeSeries = $localTimeSeries
+                source     = "Snapshot (Twelve Data) - Local Dev"
+                fetchedAt  = [DateTime]::UtcNow.ToString("o")
+            }
+            $respJson = $avResultObj | ConvertTo-Json -Depth 10
+            $bytes = [System.Text.Encoding]::UTF8.GetBytes($respJson)
+            $res.ContentType = "application/json; charset=utf-8"
+            $res.ContentLength64 = $bytes.Length
+            $res.StatusCode = 200
+            $res.OutputStream.Write($bytes, 0, $bytes.Length)
+            $res.Close()
+            continue
+        }
+
+
+        # 5. Resolve clean safe path (static files)
         $decoded = [System.Uri]::UnescapeDataString($rawPath)
         $filePath = [System.IO.Path]::Combine($root, $decoded.Replace('/', [System.IO.Path]::DirectorySeparatorChar))
+
 
         if ([System.IO.File]::Exists($filePath)) {
             $bytes = [System.IO.File]::ReadAllBytes($filePath)
