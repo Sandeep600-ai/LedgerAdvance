@@ -9,7 +9,7 @@
 
 ## 1. Current Phase
 
-**Phase 13: Live Stock Price Engine & Real-Time Share Price Resolution** (100% Complete & Verified)
+**Phase 14: Alpha Vantage API Integration & Automatic Chart Failover** (100% Complete & Verified)
 
 - Phase 1 (Design Tokens & CSS Foundation): **100% Complete**
 - Phase 2 (JavaScript Core: charts, compare, budget, app): **100% Complete**
@@ -24,6 +24,7 @@
 - Phase 11 (Stock Price Accuracy Baseline): **100% Complete**
 - Phase 12 (Automatic Price Update & Dynamic Session Engine): **100% Complete**
 - Phase 13 (Live Stock Price Resolution & Serverless Type Stability): **100% Complete**
+- Phase 14 (Alpha Vantage Fallback Integration & Source Attribution): **100% Complete**
 
 ---
 
@@ -43,10 +44,11 @@ All files are verified in the filesystem:
 | [`js/app.js`](file:///d:/Desktop/Ledger%20advance/js/app.js) | Verified Complete | Live Indian clock engine, dynamic trading session engine (`_getLatestTradingSessionDate`, `_formatSessionDate`), 4-state market status detection (Live, Pre-Market, After-Hours, Closed), automatic background polling (45s), universal quote synchronization without Netlify-only gating. |
 | [`data/snapshot.json`](file:///d:/Desktop/Ledger%20advance/data/snapshot.json) | Verified Complete | Authentic market session quotes for all 25 tickers with October 14, 2026 session closes: Nike at `$35.30` (matching Google Search), Apple at `$342.96`, Tesla at `$367.16`, INFY at `$11.48`. |
 | [`data/snapshot.js`](file:///d:/Desktop/Ledger%20advance/data/snapshot.js) | Verified Complete | Bundled global snapshot object (`window.__LEDGER_SNAPSHOT__`) synchronized with October 14, 2026 session data for instant offline and `file:///` execution. |
-| [`netlify/functions/declarations.d.ts`](file:///d:/Desktop/Ledger%20advance/netlify/functions/declarations.d.ts) | Verified Complete | Ambient TypeScript declarations for `@netlify/blobs` and `@netlify/functions` resolving IDE diagnostics. |
+| [`netlify/declarations.d.ts`](file:///d:/Desktop/Ledger%20advance/netlify/declarations.d.ts) | Verified Complete | Ambient TypeScript declarations for `@netlify/blobs` and `@netlify/functions`. Moved outside `netlify/functions/` to prevent Netlify treating it as a serverless function. |
 | [`package.json`](file:///d:/Desktop/Ledger%20advance/package.json) | Verified Complete | Node package manifest declaring `@netlify/blobs`, `@netlify/functions`, and TypeScript dependencies. |
 | [`tsconfig.json`](file:///d:/Desktop/Ledger%20advance/tsconfig.json) | Verified Complete | TypeScript compiler configuration (ES2022, NodeNext resolution, DOM libs) for Netlify Functions. |
-| [`server.ps1`](file:///d:/Desktop/Ledger%20advance/server.ps1) | Verified Complete | Local HTTP server with built-in API proxy routes for `/.netlify/functions/quote-live`, `/api/quote`, `/api/quotes`, and `/api/data` with full CORS support. |
+| [`netlify/functions/alphavantage-series.mts`](file:///d:/Desktop/Ledger%20advance/netlify/functions/alphavantage-series.mts) | Verified Complete | Alpha Vantage Daily Time Series endpoint (`TIME_SERIES_DAILY`) providing historical close + volume fallback with 30-minute Netlify Blobs cache and zero hardcoded keys. |
+| [`server.ps1`](file:///d:/Desktop/Ledger%20advance/server.ps1) | Verified Complete | Local HTTP server with built-in API proxy routes for `/.netlify/functions/quote-live`, `/api/quote`, `/api/quotes`, `/api/data`, and `/api/alphavantage-series` with full CORS support. |
 | [`netlify.toml`](file:///d:/Desktop/Ledger%20advance/netlify.toml) | Verified Complete | Netlify build, functions bundler, and security headers configuration. |
 | [`netlify/functions/data.mts`](file:///d:/Desktop/Ledger%20advance/netlify/functions/data.mts) | Verified Complete | Serverless function serving cached daily snapshot JSON with Blobs storage. |
 | [`netlify/functions/quote-live.mts`](file:///d:/Desktop/Ledger%20advance/netlify/functions/quote-live.mts) | Verified Complete | Resilient multi-provider live quote function (Twelve Data + Alpha Vantage + snapshot fallback) with 45s TTL cache. |
@@ -102,8 +104,27 @@ All files are verified in the filesystem:
    - **Tier 3 (Edge Storage Cache):** Netlify Blobs Cache Store (`getStore("live-quotes")`) — caches quotes with a 45-second TTL (`45,000ms`) to optimize performance and prevent rate limiting.
    - **Tier 4 (Guaranteed Resilience):** Snapshot Fallback (`data/snapshot.json` / `data/snapshot.js`) — provides instant, authentic session data for all 25 tickers if APIs are offline or keys unconfigured.
 3. **Serverless TypeScript & Blobs Stability:**
-   - Resolved `@netlify/blobs` and `@netlify/functions` module resolution errors by adding `netlify/functions/declarations.d.ts`, `tsconfig.json`, and `package.json`.
+   - Resolved `@netlify/blobs` and `@netlify/functions` module resolution errors by adding `netlify/declarations.d.ts`, `tsconfig.json`, and `package.json`. File is kept at `netlify/` level to avoid Netlify mistakenly invoking it as a serverless endpoint.
    - Cleared IDE diagnostics and guaranteed full build compatibility for both local testing and Netlify production deployments.
+
+### 4. Phase 14: Alpha Vantage API Integration & Automatic Failover (Option 2)
+1. **Serverless Alpha Vantage Daily Series (`netlify/functions/alphavantage-series.mts`):**
+   - Implemented `TIME_SERIES_DAILY` endpoint with compact output (up to 100 recent sessions).
+   - Normalizes data into `{ symbol, timeSeries: [{ date, close, volume }], source: "Alpha Vantage", fetchedAt }`.
+   - 30-minute Netlify Blobs cache store (`alphavantage-cache`) with `Cache-Control: public, max-age=1800`.
+   - Gracefully intercepts Alpha Vantage free tier rate limits (429 HTTP status with friendly retry note) and missing key status (503). Zero hardcoded keys (`ALPHA_VANTAGE_API_KEY` read from environment).
+2. **Frontend Dynamic Failover & Clear Source Attribution (`js/app.js`):**
+   - Integrated `_fetchAlphaVantageTimeSeries(symbol)` with dual endpoint support (`/.netlify/functions/alphavantage-series` and `/api/alphavantage-series`).
+   - Seamless automatic failover for both the Dashboard 90-Day Price Chart (`_renderDashboardCharts()`) and the Company Deep-Dive view (`renderCompany()`).
+   - Twelve Data remains the primary provider; Alpha Vantage is called automatically only when Twelve Data series data is absent or rate-limited.
+   - Dynamic attribution: Chart subtitle automatically displays `Twelve Data with 20-Day SMA` when primary data is rendered, and switches to `Alpha Vantage · Fallback · with 20-Day SMA` when fallback data is displayed.
+   - **Netlify Deployment Resilience**:
+     - Immediate UI bootstrap: `initTheme()`, navigation `.nav-btn` listeners, and search inputs are bound synchronously prior to any async network operations, ensuring navigation and theme toggling are 100% responsive immediately.
+     - Document ready state handling: safe boot sequence checks `document.readyState === 'loading'`, preventing dead listeners if scripts are evaluated after `DOMContentLoaded`.
+     - Multi-tier snapshot loader: `loadData()` instantly utilizes `window.__LEDGER_SNAPSHOT__`, attempts `/.netlify/functions/data`, and immediately falls back to `data/snapshot.json` if Netlify Blobs has not yet been seeded, preventing 404 empty state lockups.
+     - Blobs error bypass in `alphavantage-series.mts`: serverless function intercepts unconfigured Netlify Blobs environments gracefully, proceeding directly to Alpha Vantage API fetch without returning HTTP 500.
+3. **Local Dev & Server Compatibility (`server.ps1`):**
+   - Added native `/api/alphavantage-series` and `/.netlify/functions/alphavantage-series` mock proxy to `server.ps1` with CORS headers.
 
 ---
 

@@ -35,21 +35,27 @@ export default async (req: Request, context: Context) => {
       );
     }
 
-    // --- Blobs cache: 30-minute TTL ---
-    const store = getStore("alphavantage-cache");
+    // --- Blobs cache: 30-minute TTL (resilient fallback if Blobs store unconfigured) ---
+    let store: any = null;
     const cacheKey = `series-${symbol}`;
     const now = Date.now();
     const TTL_MS = 30 * 60 * 1000; // 30 minutes
 
-    const cached = await store.get(cacheKey, { type: "json" }) as any;
-    if (cached && cached._timestamp && now - cached._timestamp < TTL_MS) {
-      return new Response(JSON.stringify(cached.data), {
-        status: 200,
-        headers: {
-          ...corsHeaders,
-          "Cache-Control": "public, max-age=1800"
-        }
-      });
+    try {
+      store = getStore("alphavantage-cache");
+      const cached = await store.get(cacheKey, { type: "json" }) as any;
+      if (cached && cached._timestamp && now - cached._timestamp < TTL_MS) {
+        return new Response(JSON.stringify(cached.data), {
+          status: 200,
+          headers: {
+            ...corsHeaders,
+            "Cache-Control": "public, max-age=1800"
+          }
+        });
+      }
+    } catch (blobErr: any) {
+      console.warn("Netlify Blobs cache unavailable on this deployment:", blobErr?.message);
+      store = null;
     }
 
     // --- Fetch from Alpha Vantage TIME_SERIES_DAILY ---
@@ -114,8 +120,14 @@ export default async (req: Request, context: Context) => {
       fetchedAt: new Date().toISOString()
     };
 
-    // Cache successful response in Blobs
-    await store.setJSON(cacheKey, { _timestamp: now, data: result });
+    // Cache successful response in Blobs if store is available
+    if (store) {
+      try {
+        await store.setJSON(cacheKey, { _timestamp: now, data: result });
+      } catch (_) {
+        // Cache write failed non-fatally
+      }
+    }
 
     return new Response(JSON.stringify(result), {
       status: 200,
