@@ -1,0 +1,87 @@
+# ============================================================
+# LEDGER ADVANCE — Git Ignore Rules
+# Protects sensitive credentials, environment files, local logs,
+# build artifacts, and system metadata from being published to GitHub.
+# ============================================================
+
+# 1. Environment & Secret Configuration Files (CRITICAL)
+# Protects API keys (TWELVE_DATA_API_KEY, TAVILY_API_KEY, ALPHA_VANTAGE_API_KEY, etc.)
+.env
+.env.*
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 2. Private Keys, Certificates, and Cloud Credentials
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+*.pkcs12
+secrets/
+credentials/
+credentials.json
+client_secret*.json
+token.json
+service-account*.json
+*.keystore
+
+# 3. Application & Execution Logs
+# refresh-data.js generates refresh.log which may contain API response data
+refresh.log
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# 4. Internal Progress Tracking & Local Workspace Metadata
+# Contains local disk paths (e.g. D:\Desktop\...) and private machine metadata
+PROGRESS.md
+scratch/
+*.scratch
+*.tmp
+*.bak
+
+# 5. Dependency Directories
+node_modules/
+jspm_packages/
+.pnp
+.pnp.js
+
+# 6. Netlify & Serverless Build / Cache Artifacts
+.netlify/
+.netlify/*
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# 7. Operating System Cache & Metadata (Windows / macOS / Linux)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# 8. Editor & IDE Settings
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
