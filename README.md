@@ -184,27 +184,28 @@ When running the data refresh script or serverless functions, configure the foll
 
 ---
 
-## Prerequisites & Running Locally
+## Quick Start & Running Locally
 
-### Prerequisites
-1. **Operating System:** Windows 10 / Windows 11 (or macOS / Linux).
-2. **Web Browser:** Any modern web browser with HTML5 and SVG support (Google Chrome, Microsoft Edge, Mozilla Firefox, Safari).
-3. **PowerShell:** Windows PowerShell 5.1 or PowerShell Core 7+ (for local HTTP server).
-4. **Node.js (Optional):** Node.js v18.0.0 or higher (only needed if executing the manual data refresh script `refresh-data.js`).
+### Method 1: Direct Browser Launch (Zero Setup)
+LedgerAdvance includes a pre-bundled snapshot data layer (`data/snapshot.js`), allowing the application to run immediately without installing dependencies or running a background server:
+
+- Double-click **`index.html`** in Windows File Explorer (or your file manager), or
+- Launch from PowerShell:
+  ```powershell
+  Start-Process index.html
+  ```
 
 ---
 
-### Running the Application Locally
-
-#### Method 1: Local HTTP Server via PowerShell (Recommended)
-This method runs the project on a local HTTP server with full CORS support:
+### Method 2: Local HTTP Server (Optional)
+If you prefer running the application through a local HTTP server with CORS support:
 
 1. Open PowerShell and navigate to the project directory:
    ```powershell
-   cd "D:\Desktop\Ledger advance"
+   cd LedgerAdvance
    ```
 
-2. Start the local server:
+2. Start the lightweight local server:
    ```powershell
    .\server.ps1 -Port 8080
    ```
@@ -214,31 +215,16 @@ This method runs the project on a local HTTP server with full CORS support:
    http://localhost:8080/
    ```
 
-#### Method 2: Direct Browser Execution (Zero Setup)
-Because LedgerAdvance includes a bundled fallback data layer (`data/snapshot.js`), you can launch the application directly without installing or running any server:
+---
 
-1. In PowerShell:
-   ```powershell
-   Start-Process 'D:\Desktop\Ledger advance\index.html'
-   ```
-   *Or double-click `index.html` in Windows File Explorer.*
+## 📜 Disclaimer & License
 
-2. The application will initialize immediately using the bundled snapshot data.
+> **Disclaimer:** LedgerAdvance is an open-source analytical and educational dashboard designed for personal finance tracking and market research. It does not provide financial, investment, or trading advice.
+
+Distributed under the **MIT License**. Free to use, modify, and distribute.
 
 ---
 
-### Refreshing Data Locally (Optional)
-To update the local snapshot with fresh external API data using `refresh-data.js`:
-
-1. Set your environment variables in PowerShell:
-   ```powershell
-   $env:TWELVE_DATA_API_KEY = "your_twelve_data_api_key"
-   $env:TAVILY_API_KEY = "your_tavily_api_key"
-   ```
-
-2. Run the refresh script with Node.js:
-   ```powershell
-   node refresh-data.js
-   ```
-
-3. The script will query the APIs, update `data/snapshot.json`, and write a log entry to `refresh.log`.
+<p align="center">
+  <b>LedgerAdvance</b> • Engineered with Vanilla Web Technologies (HTML5 · CSS3 · ES6+ · Native SVG)
+</p>
