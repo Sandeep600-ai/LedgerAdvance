@@ -35,29 +35,29 @@ All files are verified in the filesystem:
 
 | File Path | Status | Purpose / Key Features |
 |---|---|---|
-| [`.gitignore`](file:///D:/Desktop/Github-Leger-Advance/.gitignore) | Verified Complete | Comprehensive git ignore rules shielding environment variables (`.env*`), credentials/certificates, logs (`refresh.log`), build artifacts, OS metadata, and internal tracking. |
-| [`README.md`](file:///D:/Desktop/Github-Leger-Advance/README.md) | Verified Complete | Clean open-source documentation with zero personal local paths, streamlined 2-method execution guide, educational disclaimer, and MIT License footer. |
-| [`index.html`](file:///D:/Desktop/Github-Leger-Advance/index.html) | Verified Complete | Shell with Company selector dropdown, 5-stock comparison, real-time Indian local clock badge in the topbar, and live company market status badge. |
-| [`styles/tokens.css`](file:///D:/Desktop/Github-Leger-Advance/styles/tokens.css) | Verified Complete | Color tokens, typography, dark mode palette (`#0D0F17` / `#141722` / `#090B10`), and 25 HSL ticker colors. |
-| [`styles/layout.css`](file:///D:/Desktop/Github-Leger-Advance/styles/layout.css) | Verified Complete | Width normalization with `minmax(0, 1fr)`, topbar flex-shrink and padding adjustments, zero horizontal blowout, and responsive breakpoints at 1200px and 1060px. |
-| [`styles/components.css`](file:///D:/Desktop/Github-Leger-Advance/styles/components.css) | Verified Complete | `.stat-card` with `min-width: 0; box-sizing: border-box; overflow: hidden;`, `.stat-card-row` with wrapping, tape cards with `flex: 1 1 170px` for 5 simultaneous stock comparisons. |
-| [`js/charts.js`](file:///D:/Desktop/Github-Leger-Advance/js/charts.js) | Verified Complete | Pure SVG charting library: multi-series line chart with collision avoidance, radar, volume, and RSI gauges. |
-| [`js/compare.js`](file:///D:/Desktop/Github-Leger-Advance/js/compare.js) | Verified Complete | `MAX_SELECTED = 5` supporting comparison of up to 5 stocks simultaneously with FIFO eviction on 6th selection. |
-| [`js/budget.js`](file:///D:/Desktop/Github-Leger-Advance/js/budget.js) | Verified Complete | Interactive budget planner with compounding projections and Rule of 72 calculation. |
-| [`js/app.js`](file:///D:/Desktop/Github-Leger-Advance/js/app.js) | Verified Complete | Live Indian clock engine, dynamic trading session engine (`_getLatestTradingSessionDate`, `_formatSessionDate`), 4-state market status detection (Live, Pre-Market, After-Hours, Closed), automatic background polling (45s), universal quote synchronization without Netlify-only gating. |
-| [`data/snapshot.json`](file:///D:/Desktop/Github-Leger-Advance/data/snapshot.json) | Verified Complete | Authentic market session quotes for all 25 tickers with October 14, 2026 session closes: Nike at `$35.30` (matching Google Search), Apple at `$342.96`, Tesla at `$367.16`, INFY at `$11.48`. |
-| [`data/snapshot.js`](file:///D:/Desktop/Github-Leger-Advance/data/snapshot.js) | Verified Complete | Bundled global snapshot object (`window.__LEDGER_SNAPSHOT__`) synchronized with October 14, 2026 session data for instant offline and `file:///` execution. |
-| [`declarations.d.ts`](file:///D:/Desktop/Github-Leger-Advance/declarations.d.ts) | Verified Complete | Ambient TypeScript declarations for `@netlify/blobs` and `@netlify/functions`. Located at root level to prevent Netlify treating it as a serverless function. |
-| [`package.json`](file:///D:/Desktop/Github-Leger-Advance/package.json) | Verified Complete | Node package manifest declaring `@netlify/blobs`, `@netlify/functions`, and TypeScript dependencies. |
-| [`tsconfig.json`](file:///D:/Desktop/Github-Leger-Advance/tsconfig.json) | Verified Complete | TypeScript compiler configuration (ES2022, NodeNext resolution, DOM libs) for Netlify Functions. |
-| [`netlify/functions/alphavantage-series.mts`](file:///D:/Desktop/Github-Leger-Advance/netlify/functions/alphavantage-series.mts) | Verified Complete | Alpha Vantage Daily Time Series endpoint (`TIME_SERIES_DAILY`) providing historical close + volume fallback with 30-minute Netlify Blobs cache and zero hardcoded keys. |
-| [`server.ps1`](file:///D:/Desktop/Github-Leger-Advance/server.ps1) | Verified Complete | Local HTTP server with built-in API proxy routes for `/.netlify/functions/quote-live`, `/api/quote`, `/api/quotes`, `/api/data`, and `/api/alphavantage-series` with full CORS support. |
-| [`netlify.toml`](file:///D:/Desktop/Github-Leger-Advance/netlify.toml) | Verified Complete | Netlify build, functions bundler, and security headers configuration. |
-| [`netlify/functions/data.mts`](file:///D:/Desktop/Github-Leger-Advance/netlify/functions/data.mts) | Verified Complete | Serverless function serving cached daily snapshot JSON with Blobs storage. |
-| [`netlify/functions/quote-live.mts`](file:///D:/Desktop/Github-Leger-Advance/netlify/functions/quote-live.mts) | Verified Complete | Resilient multi-provider live quote function (Twelve Data + Alpha Vantage + snapshot fallback) with 45s TTL cache. |
-| [`netlify/functions/quotes.mts`](file:///D:/Desktop/Github-Leger-Advance/netlify/functions/quotes.mts) | Verified Complete | Bulk universe quotes sync endpoint returning latest prices and session metadata. |
-| [`netlify/functions/scheduled/daily-refresh.mts`](file:///D:/Desktop/Github-Leger-Advance/netlify/functions/scheduled/daily-refresh.mts) | Verified Complete | Scheduled cron background function (`30 1 * * *`) refreshing Tavily and market quotes. |
-| [`refresh-data.js`](file:///D:/Desktop/Github-Leger-Advance/refresh-data.js) | Verified Complete | Standalone Node.js script synchronizing both `data/snapshot.json` and `data/snapshot.js`. |
+| [`.gitignore`](.gitignore) | Verified Complete | Comprehensive git ignore rules shielding environment variables (`.env*`), credentials/certificates, logs (`refresh.log`), build artifacts, OS metadata, and internal tracking. |
+| [`README.md`](README.md) | Verified Complete | Clean open-source documentation with zero personal local paths, streamlined 2-method execution guide, educational disclaimer, and MIT License footer. |
+| [`index.html`](index.html) | Verified Complete | Shell with Company selector dropdown, 5-stock comparison, real-time Indian local clock badge in the topbar, and live company market status badge. |
+| [`styles/tokens.css`](styles/tokens.css) | Verified Complete | Color tokens, typography, dark mode palette (`#0D0F17` / `#141722` / `#090B10`), and 25 HSL ticker colors. |
+| [`styles/layout.css`](styles/layout.css) | Verified Complete | Width normalization with `minmax(0, 1fr)`, topbar flex-shrink and padding adjustments, zero horizontal blowout, and responsive breakpoints at 1200px and 1060px. |
+| [`styles/components.css`](styles/components.css) | Verified Complete | `.stat-card` with `min-width: 0; box-sizing: border-box; overflow: hidden;`, `.stat-card-row` with wrapping, tape cards with `flex: 1 1 170px` for 5 simultaneous stock comparisons. |
+| [`js/charts.js`](js/charts.js) | Verified Complete | Pure SVG charting library: multi-series line chart with collision avoidance, radar, volume, and RSI gauges. |
+| [`js/compare.js`](js/compare.js) | Verified Complete | `MAX_SELECTED = 5` supporting comparison of up to 5 stocks simultaneously with FIFO eviction on 6th selection. |
+| [`js/budget.js`](js/budget.js) | Verified Complete | Interactive budget planner with compounding projections and Rule of 72 calculation. |
+| [`js/app.js`](js/app.js) | Verified Complete | Live Indian clock engine, dynamic trading session engine (`_getLatestTradingSessionDate`, `_formatSessionDate`), 4-state market status detection (Live, Pre-Market, After-Hours, Closed), automatic background polling (45s), universal quote synchronization without Netlify-only gating. |
+| [`data/snapshot.json`](data/snapshot.json) | Verified Complete | Authentic market session quotes for all 25 tickers with October 14, 2026 session closes: Nike at `$35.30` (matching Google Search), Apple at `$342.96`, Tesla at `$367.16`, INFY at `$11.48`. |
+| [`data/snapshot.js`](data/snapshot.js) | Verified Complete | Bundled global snapshot object (`window.__LEDGER_SNAPSHOT__`) synchronized with October 14, 2026 session data for instant offline and `file:///` execution. |
+| [`declarations.d.ts`](declarations.d.ts) | Verified Complete | Ambient TypeScript declarations for `@netlify/blobs` and `@netlify/functions`. Located at root level to prevent Netlify treating it as a serverless function. |
+| [`package.json`](package.json) | Verified Complete | Node package manifest declaring `@netlify/blobs`, `@netlify/functions`, and TypeScript dependencies. |
+| [`tsconfig.json`](tsconfig.json) | Verified Complete | TypeScript compiler configuration (ES2022, NodeNext resolution, DOM libs) for Netlify Functions. |
+| [`netlify/functions/alphavantage-series.mts`](netlify/functions/alphavantage-series.mts) | Verified Complete | Alpha Vantage Daily Time Series endpoint (`TIME_SERIES_DAILY`) providing historical close + volume fallback with 30-minute Netlify Blobs cache and zero hardcoded keys. |
+| [`server.ps1`](server.ps1) | Verified Complete | Local HTTP server with built-in API proxy routes for `/.netlify/functions/quote-live`, `/api/quote`, `/api/quotes`, `/api/data`, and `/api/alphavantage-series` with full CORS support. |
+| [`netlify.toml`](netlify.toml) | Verified Complete | Netlify build, functions bundler, and security headers configuration. |
+| [`netlify/functions/data.mts`](netlify/functions/data.mts) | Verified Complete | Serverless function serving cached daily snapshot JSON with Blobs storage. |
+| [`netlify/functions/quote-live.mts`](netlify/functions/quote-live.mts) | Verified Complete | Resilient multi-provider live quote function (Twelve Data + Alpha Vantage + snapshot fallback) with 45s TTL cache. |
+| [`netlify/functions/quotes.mts`](netlify/functions/quotes.mts) | Verified Complete | Bulk universe quotes sync endpoint returning latest prices and session metadata. |
+| [`netlify/functions/scheduled/daily-refresh.mts`](netlify/functions/scheduled/daily-refresh.mts) | Verified Complete | Scheduled cron background function (`30 1 * * *`) refreshing Tavily and market quotes. |
+| [`refresh-data.js`](refresh-data.js) | Verified Complete | Standalone Node.js script synchronizing both `data/snapshot.json` and `data/snapshot.js`. |
 
 ---
 
